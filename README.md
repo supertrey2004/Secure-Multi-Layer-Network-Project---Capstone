@@ -24,18 +24,18 @@ The environment is fully virtualized and consists of **segmented network layers*
 The system is divided into **three isolated network layers**:
 
 1. **External Network**
-   - Represents the public internet
-   - Limited access into internal systems
+    - Represents the public internet
+    - Limited access into internal systems
 
 2. **Internal Network**
-   - Domain-joined user workstations
-   - Node.js web application server
-   - Domain services
+    - Domain-joined user workstations
+    - Node.js web application server
+    - Domain services
 
 3. **Private Network**
-   - Highly restricted
-   - Hosts the MongoDB database
-   - Accessible only through controlled firewall rules
+    - Highly restricted
+    - Hosts the MongoDB database
+    - Accessible only through controlled firewall rules
 
 Two **OPNsense firewalls** enforce segmentation and routing between layers.
 
@@ -91,13 +91,14 @@ Two **OPNsense firewalls** enforce segmentation and routing between layers.
 
 ## Repository Structure
 
-Baseline_docs/
-Docs/
-    diagrams/
-    configuration/
-    pen_testing/
-Website/
-README.md
+- Baseline_docs/
+- Docs/
+    - configuration/
+    - diagrams/
+    - pen_testing/
+    - resources/
+- Website/
+- README.md
 
 ---
 
