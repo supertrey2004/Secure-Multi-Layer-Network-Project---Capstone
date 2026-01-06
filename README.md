@@ -91,14 +91,13 @@ Two **OPNsense firewalls** enforce segmentation and routing between layers.
 
 ## Repository Structure
 
-.
-├── Baseline_docs/
-├── Docs/
-│ ├── diagrams/
-│ ├── configuration/
-│ └── pen_testing/
-├── Website/
-└── README.md
+Baseline_docs/
+Docs/
+    diagrams/
+    configuration/
+    pen_testing/
+Website/
+README.md
 
 ---
 
