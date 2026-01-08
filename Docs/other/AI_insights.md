@@ -635,3 +635,10 @@ Before publishing, confirm:
 
 > Setup files are **executable thought processes**.  
 > Your job is to make your decisions replayable.
+```
+
+---
+
+4. # Summary evaluating the relevance of the information
+
+- Overall after going through all the The information the AI has given me I determined that I need to increase the amount of tools I'm gonna use and I got some good ideas now that can help me. As for securing a website it takes a lot more than I thought and I'll have to figure that out when the time comes. Finally Markdown language yes is very simple but to make it actually look good is harder than I thought. All these three questions and the help of AI has probably helped me improve this project. 

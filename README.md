@@ -93,12 +93,14 @@ Two **OPNsense firewalls** enforce segmentation and routing between layers.
 
 - Baseline_docs/
 - Docs/
-    - configuration/
+    - configurations/
     - diagrams/
     - other/
     - pen_testing/
     - resources/
 - Website/
+    - back-end/
+    - front-end/
 - README.md
 
 ---
