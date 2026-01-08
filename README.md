@@ -95,6 +95,7 @@ Two **OPNsense firewalls** enforce segmentation and routing between layers.
 - Docs/
     - configuration/
     - diagrams/
+    - other/
     - pen_testing/
     - resources/
 - Website/
