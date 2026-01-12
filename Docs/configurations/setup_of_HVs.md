@@ -29,3 +29,8 @@
     - as for the network we will be connecting Two networks externally to connect one to the Internet and the other one to the other external blade
     - we will also be connecting one internal network for localized function
     - The rest of the network configuration will be stored in a separate file.
+
+7. Secondary drive for VM disks
+    - Open Disk manager and clear all data
+    - Create a new partition and connect it as a new drive.
+    - Configure Hyper V to use that drive for disks
