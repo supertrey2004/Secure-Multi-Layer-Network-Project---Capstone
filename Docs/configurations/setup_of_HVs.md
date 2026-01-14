@@ -13,6 +13,7 @@
     - Disable all nonessential Nics
     - Use one Nic give it an IP address if it doesn't already have one
     - Install any critical updates
+    - Type in the search bar update and you should find the update windows connection in settings scan for updates and update
 
 4. next we're gonna install Hyper-V
     - Go to Add roles in the top right corner three dots
