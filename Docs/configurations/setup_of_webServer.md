@@ -1,12 +1,12 @@
 cd /etc/netplan/
 
-nano 
+sudo nano ###
 
 network:
     version: 2
     renderer: networkd
     ethernets:
-        your_interface_name:
+        eth0:
         dhcp4: no
         addresses: [192.168.104.20/24]
 

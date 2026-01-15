@@ -22,4 +22,19 @@
     - Open the wizard for configuring your domain service
     - Since this will be our root domain select New tree
     - Type in your root domain
-    - 
+    - "wskinner.ninjas"
+    - now set a good password
+    - leave rest default
+    - Install (It will restart)
+
+5. DNS
+    - Go up to tools and click DNS
+    - Let the tool open go to your primary and check if your baseline records are there (This would have the IP address of the current system)
+    - Confirm that dad's working create a reverse lookup zone
+    - right click on the reverse lookup zones
+    - Create new zone and stick with all the defaults until it asks you for your network ID
+    - At the bottom should be another click which will be reversed Apply that and click next and finalize it.
+    - Finally all you need to do is go to your primary look of them and enable pointers on the current addresses
+    - refresh your reverse look up you should see all the addresses there now
+
+6.

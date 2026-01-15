@@ -22,4 +22,11 @@
     - To update the firewall all you need to do is type in 12 and once it asks if you're prepared type Y
     - Upon typing Y it will give you the update status read if necessary and then hit Q to start update
 
-5. Setting up security
+5. Web interface setup
+    - Open the web page you should be prompted to finalize configuration.
+    - Put into domain name that you got from your domain server
+    - Continue a primary default up until time zone where you'll send to the closest time zone or city to you.
+    - Near the bottom of Hey Next page turn off the public interface due to the fact that we're on a private network.
+    - reload
+
+6. Setting up security
