@@ -7,7 +7,10 @@ network:
     renderer: networkd
     ethernets:
         eth0:
-        dhcp4: no
-        addresses: [192.168.104.20/24]
+            dhcp4: no
+            addresses: [192.168.104.20/24]
+            routes:
+                - to: default
+                    via: 192.168.104.1
 
 sudo netplan apply
