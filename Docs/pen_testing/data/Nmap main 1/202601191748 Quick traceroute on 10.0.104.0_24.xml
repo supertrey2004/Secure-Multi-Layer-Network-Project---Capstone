@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args="nmap -sn --traceroute 10.0.104.0/24" profile_name="Quick traceroute" scanner="nmap" start="1768870081" startstr="Mon Jan 19 17:48:01 2026" version="7.98" xmloutputversion="1.04"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.98 ( https://nmap.org ) at 2026-01-19 17:48 -0700
+Nmap scan report for 10.0.104.1
+Host is up (0.0040s latency).
+MAC Address: 2C:3E:CF:BA:E9:C4 (Cisco Systems)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   4.00 ms 10.0.104.1
+
+Nmap scan report for 10.0.104.11
+Host is up (0.0010s latency).
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.00 ms 10.0.104.11
+
+Nmap scan report for 10.0.104.20
+Host is up (0.0010s latency).
+MAC Address: 24:B6:FD:C8:DB:F5 (Dell)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.00 ms 10.0.104.20
+
+Nmap scan report for 10.0.104.30
+Host is up (0.0013s latency).
+MAC Address: 00:15:5D:68:0A:07 (Microsoft)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.27 ms 10.0.104.30
+
+Nmap scan report for 10.0.104.10
+Host is up.
+
+Nmap done: 256 IP addresses (5 hosts up) scanned in 5.24 seconds
+</output><host comment=""><status state="up"></status><address addr="10.0.104.1" vendor="" addrtype="ipv4"></address><address addr="2C:3E:CF:BA:E9:C4" vendor="Cisco Systems" addrtype="mac"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="4.00" ipaddr="10.0.104.1" host=""></hop></trace></host><host comment=""><status state="up"></status><address addr="10.0.104.11" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:02" vendor="Microsoft" addrtype="mac"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="1.00" ipaddr="10.0.104.11" host=""></hop></trace></host><host comment=""><status state="up"></status><address addr="10.0.104.20" vendor="" addrtype="ipv4"></address><address addr="24:B6:FD:C8:DB:F5" vendor="Dell" addrtype="mac"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="1.00" ipaddr="10.0.104.20" host=""></hop></trace></host><host comment=""><status state="up"></status><address addr="10.0.104.30" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:07" vendor="Microsoft" addrtype="mac"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="1.27" ipaddr="10.0.104.30" host=""></hop></trace></host><host comment=""><status state="up"></status><address addr="10.0.104.10" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><runstats><finished time="1768870086" timestr="Mon Jan 19 17:48:06 2026"></finished><hosts up="5" down="251" total="256"></hosts></runstats></nmaprun>

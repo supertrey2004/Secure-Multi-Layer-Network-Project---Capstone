@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args="nmap -sV -T4 -O -F --version-light 10.0.104.0/24" profile_name="Quick scan plus" scanner="nmap" start="1768870096" startstr="Mon Jan 19 17:48:16 2026" version="7.98" xmloutputversion="1.04"><scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"></scaninfo><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.98 ( https://nmap.org ) at 2026-01-19 17:48 -0700
+Nmap scan report for 10.0.104.1
+Host is up (0.0031s latency).
+Not shown: 97 closed tcp ports (reset)
+PORT    STATE SERVICE    VERSION
+22/tcp  open  ssh        Cisco SSH 1.25 (protocol 2.0)
+80/tcp  open  http       Cisco IOS http config
+443/tcp open  ssl/https?
+MAC Address: 2C:3E:CF:BA:E9:C4 (Cisco Systems)
+OS details: Cisco 836, 890, 1751, 1841, 2800, or 2900 router (IOS 12.4 - 15.1), Cisco Aironet 2600-series WAP (IOS 15.2(2))
+Network Distance: 1 hop
+Service Info: OS: IOS; CPE: cpe:/o:cisco:ios
+
+Nmap scan report for 10.0.104.11
+Host is up (0.00023s latency).
+All 100 scanned ports on 10.0.104.11 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.0.104.20
+Host is up (0.00089s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT    STATE SERVICE VERSION
+135/tcp open  msrpc   Microsoft Windows RPC
+MAC Address: 24:B6:FD:C8:DB:F5 (Dell)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2022|2016 (91%)
+OS CPE: cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows Server 2022 (91%), Microsoft Windows Server 2016 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.0.104.30
+Host is up (0.0010s latency).
+All 100 scanned ports on 10.0.104.30 are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 00:15:5D:68:0A:07 (Microsoft)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 10.0.104.10
+Host is up (0.00031s latency).
+Not shown: 97 closed tcp ports (reset)
+PORT    STATE SERVICE       VERSION
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.98%E=4%D=1/19%OT=135%CT=7%CU=35390%PV=Y%DS=0%DC=L%G=Y%TM=696ED0
+OS:F5%P=i686-pc-windows-windows)SEQ(SP=102%GCD=1%ISR=108%TI=I%CI=I%II=I%SS=
+OS:S%TS=A)SEQ(SP=102%GCD=1%ISR=10A%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=105%GCD=
+OS:1%ISR=109%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=106%GCD=1%ISR=107%TI=I%CI=I%II
+OS:=I%SS=S%TS=A)SEQ(SP=106%GCD=1%ISR=10A%TI=I%CI=I%II=I%SS=S%TS=A)OPS(O1=MF
+OS:FD7NW8ST11%O2=MFFD7NW8ST11%O3=MFFD7NW8NNT11%O4=MFFD7NW8ST11%O5=MFFD7NW8S
+OS:T11%O6=MFFD7ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)ECN
+OS:(R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=
+OS:AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80
+OS:%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=
+OS:)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%
+OS:A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%
+OS:DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=
+OS:80%CD=Z)
+
+Network Distance: 0 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (5 hosts up) scanned in 37.22 seconds
+</output><host comment=""><status state="up"></status><address addr="10.0.104.1" vendor="" addrtype="ipv4"></address><address addr="2C:3E:CF:BA:E9:C4" vendor="Cisco Systems" addrtype="mac"></address><hostnames></hostnames><ports><extraports count="97" state="closed"></extraports><port portid="22" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="255"></state><service conf="10" method="probed" name="ssh" product="Cisco SSH" version="1.25" extrainfo="protocol 2.0"></service></port><port portid="80" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="255"></state><service conf="10" method="probed" name="http" product="Cisco IOS http config"></service></port><port portid="443" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="255"></state><service conf="3" method="table" name="https"></service></port></ports><os><portused state="open" proto="tcp" portid="22"></portused><portused state="closed" proto="tcp" portid="7"></portused><portused state="closed" proto="udp" portid="41698"></portused><osmatch name="Cisco 836, 890, 1751, 1841, 2800, or 2900 router (IOS 12.4 - 15.1)" accuracy="100" line="17755"><osclass vendor="Cisco" osfamily="IOS" type="router" osgen="15.X" accuracy="100"></osclass></osmatch><osmatch name="Cisco Aironet 2600-series WAP (IOS 15.2(2))" accuracy="100" line="19804"><osclass vendor="Cisco" osfamily="IOS" type="WAP" osgen="15.X" accuracy="100"></osclass></osmatch></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="258" difficulty="Good luck!" values="FEF4D5CE,2879D4B5,6E45DACE,DD72A4E9,7D4188F0,60A9FF26"></tcpsequence><ipidsequence class="Randomized" values="F785,FA5A,C8A6,E3C1,3056,F85F"></ipidsequence><tcptssequence class="none returned (unsupported)" values=""></tcptssequence></host><host comment=""><status state="up"></status><address addr="10.0.104.11" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:02" vendor="Microsoft" addrtype="mac"></address><hostnames></hostnames><ports><extraports count="100" state="filtered"></extraports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="up"></status><address addr="10.0.104.20" vendor="" addrtype="ipv4"></address><address addr="24:B6:FD:C8:DB:F5" vendor="Dell" addrtype="mac"></address><hostnames></hostnames><ports><extraports count="99" state="filtered"></extraports><port portid="135" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port></ports><os><portused state="open" proto="tcp" portid="135"></portused><osmatch name="Microsoft Windows Server 2022" accuracy="91" line="82075"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2022" accuracy="91"></osclass></osmatch><osmatch name="Microsoft Windows Server 2016" accuracy="85" line="81686"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2016" accuracy="85"></osclass></osmatch></os><uptime seconds="445355" lastboot="Wed Jan 14 14:06:02 2026"></uptime><tcpsequence index="261" difficulty="Good luck!" values="288891C6,3809F25E,1197B159,C8AD3B3E,B980CCE2,3194AB59"></tcpsequence><ipidsequence class="Incremental" values="3C9B,3C9C,3C9E,3CA0,3CA2,3CA4"></ipidsequence><tcptssequence class="1000HZ" values="1A8B8C7B,1A8B8CED,1A8B8D5E,1A8B8DCA,1A8B8E2D,1A8B8E9C"></tcptssequence></host><host comment=""><status state="up"></status><address addr="10.0.104.30" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:07" vendor="Microsoft" addrtype="mac"></address><hostnames></hostnames><ports><extraports count="100" state="closed"></extraports></ports><os><portused state="closed" proto="tcp" portid="7"></portused><portused state="closed" proto="udp" portid="41163"></portused></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="up"></status><address addr="10.0.104.10" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports><extraports count="97" state="closed"></extraports><port portid="135" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="139" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="netbios-ssn" product="Microsoft Windows netbios-ssn"></service></port><port portid="445" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="microsoft-ds"></service></port></ports><os><portused state="open" proto="tcp" portid="135"></portused><portused state="closed" proto="tcp" portid="7"></portused><portused state="closed" proto="udp" portid="35390"></portused><osmatch name="Windows Server 2022" accuracy="99" line="82130"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2022" accuracy="99"></osclass></osmatch><osmatch name="Microsoft Windows 10 1607 - 11 23H2" accuracy="97" line="74791"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="97"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703" accuracy="95" line="74865"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="95"></osclass></osmatch><osmatch name="Microsoft Windows 10 1511" accuracy="94" line="74530"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="94"></osclass></osmatch><osmatch name="Microsoft Windows Server 2012 R2" accuracy="94" line="81451"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2012" accuracy="94"></osclass></osmatch><osmatch name="Windows 11 21H2" accuracy="94" line="75587"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="94"></osclass></osmatch><osmatch name="Microsoft Windows Server 2019" accuracy="93" line="81946"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2019" accuracy="93"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703 or Windows 11 21H2" accuracy="93" line="74943"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="93"></osclass></osmatch><osmatch name="Windows Server 2019" accuracy="93" line="82039"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2019" accuracy="93"></osclass></osmatch><osmatch name="Microsoft Windows Server 2022" accuracy="93" line="82111"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2022" accuracy="93"></osclass></osmatch></os><uptime seconds="1948" lastboot="Mon Jan 19 17:16:25 2026"></uptime><tcpsequence index="262" difficulty="Good luck!" values="13E0D9F4,507A8976,EE3BCC04,DC6ED8FC,5554A119,41230457"></tcpsequence><ipidsequence class="Incremental" values="3728,372A,372C,372E,3730,3732"></ipidsequence><tcptssequence class="1000HZ" values="1DB707,1DB76F,1DB7D8,1DB841,1DB8A9,1DB913"></tcptssequence></host><runstats><finished time="1768870133" timestr="Mon Jan 19 17:48:53 2026"></finished><hosts up="5" down="251" total="256"></hosts></runstats></nmaprun>
