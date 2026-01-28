@@ -1,11 +1,8 @@
 # Test Server
 
-1. Install windows 11 workstation
+1. Install windows 10
 
 2. Setup system
-    - leave default but when it wants internet
-    - Shift + F10 to open terminal
-    - "netsh interface ip set address name="Ethernet" static 192.168.105.15 255.255.255.0 192.168.105.1"
-    - "netsh interface ip set dns name="Ethernet" static 8.8.8.8"
+    - 
 
 3. 
