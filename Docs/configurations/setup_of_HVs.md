@@ -32,6 +32,11 @@
     - The rest of the network configuration will be stored in a separate file.
 
 7. Secondary drive for VM disks
-    - Open Disk manager and clear all data
+    - Open iSCSI Initiator
+    - Target portal: NAS_IP (e.g., 10.0.10.5)
+    - Connect and check Add to Favorite Targets
+    - Open Disk manager
+    - If the new disk is Offline, right-click and click Online
+    - If Not Initialized: Right-click and click Initialize Disk and set Partition style = GPT
     - Create a new partition and connect it as a new drive.
     - Configure Hyper V to use that drive for disks
