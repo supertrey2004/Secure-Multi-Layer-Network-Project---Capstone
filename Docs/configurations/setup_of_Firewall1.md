@@ -18,7 +18,7 @@
     - Then type 2 and set your IP addresses based on your schema (Make sure you put the right IP address on the right Interface)
 
 4. Updating services
-    - Once you can cut ping 8.8.8.8 or the Internet Prepare for update
+    - Once you can ping 8.8.8.8 or the Internet Prepare for update
     - To update the firewall all you need to do is type in 12 and once it asks if you're prepared type Y
     - Upon typing Y it will give you the update status read if necessary and then hit Q to start update
 

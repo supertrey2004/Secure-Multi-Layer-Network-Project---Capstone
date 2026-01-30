@@ -9,7 +9,7 @@
     - Now log in as the root user with the root user and the Password you created
 
 2. connect corresponding networks
-    - In the settings connect two networks the Internet network and the internal network
+    - In the settings connect two networks the internal network and the private network
     - Make sure to keep track of which interfaces those are connected to so that they can be used in the application
 
 3. preparing network connections
@@ -18,7 +18,7 @@
     - Then type 2 and set your IP addresses based on your schema (Make sure you put the right IP address on the right Interface)
 
 4. Updating services
-    - Once you can cut ping 8.8.8.8 or the Internet Prepare for update
+    - Once you can ping 8.8.8.8 or the Internet Prepare for update
     - To update the firewall all you need to do is type in 12 and once it asks if you're prepared type Y
     - Upon typing Y it will give you the update status read if necessary and then hit Q to start update
 

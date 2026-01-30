@@ -8,4 +8,7 @@
     - "netsh interface ip set address name="Ethernet 2" static 192.168.105.100 255.255.255.0 192.168.105.1"
     - netsh interface ip set dns name="Ethernet 2" static 8.8.8.8
 
-3. 
+3. login to admin user
+    - now disable the user make to make the vm
+    - test vm's apps
+    - logout

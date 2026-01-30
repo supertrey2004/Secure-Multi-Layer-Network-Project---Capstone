@@ -27,11 +27,3 @@
     > description wskinner-pro390  
     > tagged TenGigabitEthernet 0/4,5,20,21,41  
     > end  
-    > configure terminal  
-    > interface vlan105  
-    > name wskinner-pro390-105  
-    > description wskinner-pro390-105  
-    > tagged TenGigabitEthernet 0/4,5,20,21  
-    > end  
-    > show vlan  
-    > copy run start  

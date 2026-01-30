@@ -23,3 +23,8 @@
     - Skip key generation
     - Insert key from email
     - Configure service
+
+5. Install git
+    - Once you're done installing git Leave everything at default
+    - Now that you have the terminal you have to log in
+    - Put in your email, name, and in a token you can generate within Github.
