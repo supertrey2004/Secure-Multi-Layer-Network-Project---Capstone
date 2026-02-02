@@ -1,7 +1,8 @@
+require('dotenv').config();
 const { MongoClient, ObjectId } = require('mongodb');
 
-const uri = "mongodb://dev:Passw0rd@SERVER_IP:27017/DBNAME";
-const dbName = ""
+const uri = process.env.MONGO_URI;
+const dbName = "DBNAME";
 
 let dal = {
 
