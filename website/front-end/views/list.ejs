@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Pics</title>
+        <link rel="stylesheet" href="css/site.css">
+    </head>
+    <body>
+        <%- include('partials/header.ejs') %>
+        <section>
+            <h1>Your Pics</h1>
+            <!-- we in to list the animals here -->
+            <% for(pic of pics){ %>
+                <div class="pic-Box">
+                    <h2><%= pic.name %>: (ID: <%= pic.id %>)</h2>
+                    <h3><%= pic.des %></h3>
+                    <img src="<%= pic.image %>" alt="Image of a <%= pic.name %>"/>
+                    <br/>
+                    <br/>
+                    <a href="/delete-pic/<%= pic.id %>" class="button">Delete</a>
+                    <a href="/edit-pic/<%= pic.id %>" class="button">Edit</a>
+                    <!-- <a href="/download-pic/<%= pic.id %>" class="button">Download</a> -->
+                </div>
+            <% } %>
+        </section>
+        <%- include('partials/footer.ejs') %>
+    </body>
+</html>

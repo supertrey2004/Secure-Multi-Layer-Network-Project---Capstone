@@ -1,0 +1,21 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "api of the website",
+  "keywords": [
+    "website",
+    "api"
+  ],
+  "license": "ISC",
+  "author": "William A Skinner",
+  "type": "commonjs",
+  "main": "back-end.js",
+  "scripts": {
+    "start": "nodemon back-end.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0"
+  }
+}

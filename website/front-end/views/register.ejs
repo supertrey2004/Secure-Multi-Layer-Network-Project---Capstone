@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="css/site.css">
+    </head>
+    <body>
+        <section>
+            <h1>Register</h1>
+            <h2><%= error %></h2>
+            <form action="/register" method="post">
+                <div>
+                    <label for="category">Username:</label>
+                    <input type="text" name="username" value="<%= username %>" placeholder="Username" required/>
+                </div>
+                <div>
+                    <label for="setup">Password:</label>
+                    <input type="password" name="password" value="<%= password %>" placeholder="Password" required/>
+                </div>
+                <div>
+                    <label for="setup">Password Again:</label>
+                    <input type="password" name="password_again" value="<%= password_again %>" placeholder="Password Again" required/>
+                </div>
+                <input type="submit" value="Register"/>
+            </form>
+        </section>
+                <section>
+            <div>
+                <br/>
+                <a href="/">Login</a>
+            </div>
+        </section>
+        <%- include('partials/footer.ejs') %>
+    </body>
+</html>

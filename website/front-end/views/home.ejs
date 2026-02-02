@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="css/site.css">
+    </head>
+    <body>
+        <%- include('partials/header.ejs') %>
+        <section>
+            <h1>Home</h1>
+
+            <% if (username) { %>
+                <h2>Welcome <%= username %> to your Photo Gallery.</h2>
+                <p>Use the navigation above to upload new photos or explore your existing gallery.</p>
+            <% } else { %>
+                <h2>Welcome to your Photo Gallery.</h2>
+                <p class="error">You are not logged in.</p>
+            <% } %>
+        </section>
+
+        <section>
+            <% if (username) { %>
+                <a href="/logout" class="button">Logout</a>
+            <% } else { %>
+                <a href="/" class="button">Login</a>
+            <% } %>
+        </section>
+        <%- include('partials/footer.ejs') %>
+    </body>
+</html>
