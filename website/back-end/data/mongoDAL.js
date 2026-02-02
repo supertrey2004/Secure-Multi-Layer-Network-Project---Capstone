@@ -1,7 +1,7 @@
 const { MongoClient, ObjectId } = require('mongodb');
 
-const uri = "mongodb+srv://dev:Passw0rd@school.45hhdf9.mongodb.net/?appName=school";
-const dbName = "PicSite"
+const uri = "mongodb://dev:Passw0rd@SERVER_IP:27017/DBNAME";
+const dbName = ""
 
 let dal = {
 

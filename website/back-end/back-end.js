@@ -19,7 +19,7 @@ app.use(express.json())
 
 app.get("/", (req, res) => {
     let response = {
-        message: "",
+        message: "Welcome to my Capstone api",
         routes: [
             {
                 route: "http://localhost:" + port,

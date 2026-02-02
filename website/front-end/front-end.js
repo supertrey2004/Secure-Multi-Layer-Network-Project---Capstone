@@ -26,7 +26,10 @@ app.use(session({
     // res.render("");
 // })
 
-
+app.get("/", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
 
 
 
