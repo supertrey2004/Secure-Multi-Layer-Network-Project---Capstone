@@ -30,7 +30,45 @@ app.get("/", (req, res) => {
     res.json(response);
 })
 
+app.get("/login", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
 
+app.get("/register", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
+
+app.get("/addText", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
+
+app.get("/listMe", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
+
+app.get("/edit/:id", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
+
+app.get("/del/:id", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
+
+app.get("/list", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
+
+app.get("/view/:id", (req, res) => {
+    let model = {username: "", password: "", error:""}
+    res.render("login", model);
+})
 
 
 
