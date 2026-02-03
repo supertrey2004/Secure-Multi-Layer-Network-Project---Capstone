@@ -37,4 +37,14 @@
     - Finally all you need to do is go to your primary look of them and enable pointers on the current addresses
     - refresh your reverse look up you should see all the addresses there now
 
-6.
+6. User setup
+    - Make an admin user
+        - 
+    - Make an employee
+        - 
+    - Make the groups
+    - Admin group give higher privilege
+    - Employee group set employee privilege
+    - Make Computer group
+    - Block or restrict what people can do on computers
+    - Allow admin to alter computers

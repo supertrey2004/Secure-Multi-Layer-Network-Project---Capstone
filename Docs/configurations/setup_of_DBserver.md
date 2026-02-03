@@ -14,3 +14,5 @@
 3. Confirm system operations and update
 
 4. Installing softwares
+    - MongoDB
+    > 
