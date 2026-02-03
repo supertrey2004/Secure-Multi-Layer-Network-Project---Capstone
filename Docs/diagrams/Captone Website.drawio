@@ -35,31 +35,34 @@
           <mxGeometry height="30" width="400" y="270" as="geometry" />
         </mxCell>
         <mxCell id="8pv8cNqjNBvLIzWp6F82-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Back end" vertex="1">
-          <mxGeometry height="270" width="400" x="440" y="40" as="geometry" />
+          <mxGeometry height="300" width="400" x="440" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-14" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/ - takes the login info against database and lets you in" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-50" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/ - Directory selector&amp;nbsp;" vertex="1">
           <mxGeometry height="30" width="400" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-40" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/register - takes provided information and adds a new user to database" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-14" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/login - takes the login info against database and lets you in" vertex="1">
           <mxGeometry height="30" width="400" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-39" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/addText - gets form and adds information to database" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-40" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/register - takes provided information and adds a new user to database" vertex="1">
           <mxGeometry height="30" width="400" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-38" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/listMe - grabs corresponding information and builds list" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-39" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/addText - gets form and adds information to database" vertex="1">
           <mxGeometry height="30" width="400" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-36" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/edit/ID - Gives corresponding information and let you edit" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-38" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/listMe - grabs corresponding information and builds list" vertex="1">
           <mxGeometry height="30" width="400" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-35" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/del/ID - Remove document" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-36" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/edit/ID - Gives corresponding information and let you edit" vertex="1">
           <mxGeometry height="30" width="400" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-37" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/list - grabs corresponding information and builds list" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-35" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/del/ID - Remove document" vertex="1">
           <mxGeometry height="30" width="400" y="210" as="geometry" />
         </mxCell>
-        <mxCell id="8pv8cNqjNBvLIzWp6F82-34" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/view/ID - grabs item of corresponding ID and displays" vertex="1">
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-37" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/list - grabs corresponding information and builds list" vertex="1">
           <mxGeometry height="30" width="400" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8pv8cNqjNBvLIzWp6F82-34" parent="8pv8cNqjNBvLIzWp6F82-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="/view/ID - grabs item of corresponding ID and displays" vertex="1">
+          <mxGeometry height="30" width="400" y="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
