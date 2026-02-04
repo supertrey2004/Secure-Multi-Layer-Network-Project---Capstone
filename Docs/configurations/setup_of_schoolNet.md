@@ -18,7 +18,7 @@
     > show vlan | include vlan 140  
     > copy run start  
 
-5. login to the rank Switchs
+5. login to the local Switchs
     - run these commands
 
     > configure terminal  
