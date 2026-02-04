@@ -2,7 +2,7 @@ require('dotenv').config();
 const { MongoClient, ObjectId } = require('mongodb');
 
 const uri = process.env.MONGO_URI;
-const dbName = "DBNAME";
+const dbName = process.env.DBNAME;
 
 let dal = {
 

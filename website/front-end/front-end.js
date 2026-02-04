@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 const express = require('express');
 const session = require('express-session')
 const app = express();
-const port = 5000;
-const api = "http://localhost:5050/";
+const port = process.env.PORT;
+const api = process.env.API_LINK;
 
 // app
 app.use(express.static("public"))
@@ -12,7 +14,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 app.use(session({
-    secret: '1234',
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: { 
@@ -31,14 +33,102 @@ app.get("/", (req, res) => {
     res.render("login", model);
 })
 
+app.post("/login", async (req, res) => {
+    let url = api + "login"
+    let model = {username: req.body.username, password: req.body.password, error:""};
+    //model['username']
+    //model['password']
+    //model['error']
+
+    if ((model['username'] != '' && model['password'] != '')) {
+        let data = {
+            username: model['username'],
+            password: model['password']
+        }
+
+        let headers = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data),
+        }
+
+        await fetch(url, headers)
+            .then(resp => resp.json())
+            .then(data => {
+                //console.log(data)
+                if (data.code == 0) {
+                    model['error'] = "Username or password are wrong"
+                } else {
+                    req.session.username = data.data.username
+                    req.session.userid = data.data.id
+                    //console.log(req.session)
+                }
+            })
+    } else{
+        model['error'] = "Please fill in all fields"
+    }
+    //console.log(model)
+    if (model['error'] == '') {
+        res.redirect("/home");
+    } else {
+        res.render("login", model)
+    }
+}) 
+
 app.get("/register", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+    let model = {username: "", password: "", password_again: "", error:""}
+    res.render("register", model);
+})
+
+app.post("/register", async (req, res) => {
+    let url = api + "register"
+    let model = {username: req.body.username, password: req.body.password, password_again: req.body.password_again, error:""}
+    //model['username']
+    //model['password']
+    //model['password_again']
+    //model['error']
+
+    if ((model['username'] != '' && model['password'] != '' && model['password'] == model['password_again'])) {
+        let data = {
+            username: model['username'],
+            password: model['password']
+        }
+
+        let headers = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data),
+        }
+
+        await fetch(url, headers)
+            .then(resp => resp.json())
+            .then(data => {
+                //console.log(data.code == 0)
+                if (data.code == 0) {
+                    model['error'] = "Username already in use"
+                }
+            })
+    } else{
+        model['error'] = "Please fill in all fields and match passwords"
+    }
+    //console.log(model)
+    if (model['error'] == '') {
+        logger(model)
+        res.redirect("/");
+    } else {
+        res.render("register", model)
+    }
 })
 
 app.get("/home", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+    logger(req.session)
+    //console.log("HOME", req.session)
+    let model = {username: req.session.username}
+    res.render("home", model);
 })
 
 app.get("/addText", (req, res) => {
@@ -72,9 +162,36 @@ app.get("/view/:id", (req, res) => {
 })
 
 
-
 // listening code
 app.listen(port, () => {
     console.log("Express is now listening:" + port)
     console.log("http://localhost:" + port)
 })
+
+//functions
+
+function logger(log) {
+    let url = api + "logger"
+
+    let logData = {
+        log: log, 
+        date: new Date()
+    }
+
+    let headers = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(logData),
+    }
+
+    fetch(url, headers)
+        .then(resp => resp.json())
+        .then(data => {
+            if (data.code == 0) {
+                console.log("Log error")
+                console.log("LOG: ", logData)
+            }
+        })
+}
