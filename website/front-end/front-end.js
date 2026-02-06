@@ -71,6 +71,7 @@ app.post("/login", async (req, res) => {
     }
     //console.log(model)
     if (model['error'] == '') {
+        logger(req.session)
         res.redirect("/home");
     } else {
         res.render("login", model)
@@ -125,35 +126,165 @@ app.post("/register", async (req, res) => {
 })
 
 app.get("/home", (req, res) => {
-    logger(req.session)
     //console.log("HOME", req.session)
     let model = {username: req.session.username}
     res.render("home", model);
 })
 
 app.get("/addText", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+    let model = {name: "", path: "", content: "", error:""}
+    res.render("addText", model);
+})
+
+app.post("/addText", async (req, res) => {
+    let url = api + "addText"
+    let model = {name: req.body.name, path: req.body.path, content: req.body.content, error:""}
+    //model['name']
+    //model['path']
+    //model['content']
+    //model['error']
+
+    if ((model['name'] != '' && model['content'] != '')) {
+        let data = {
+            userid: req.session.userid,
+            name: model['name'],
+            path: model['path'],
+            content: model['content'],
+        }
+
+        let headers = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data),
+        }
+
+        await fetch(url, headers)
+            .then(resp => resp.json())
+            .then(data => {
+                //console.log(data.code == 0)
+                if (data.code == 0) {
+                    model['error'] = "Please try again"
+                }
+            })
+    } else{
+        model['error'] = "Please fill in all required fields"
+    }
+    //console.log(model)
+    if (model['error'] == '') {
+        res.redirect("/listMe");
+    } else {
+        res.render("addText", model)
+    }
 })
 
 app.get("/listMe", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+    //console.log("List", req.session)
+    let data ={userId: req.session.userid}
+
+    let url = api + "listMe"
+    let headers = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data),
+    }
+
+    
+    fetch(url, headers)
+        .then(resp => resp.json())
+        .then(data => {
+            //console.log(data)
+            let model = {docs:data.data}
+            res.render("listMe", model);
+        })
 })
 
 app.get("/edit/:id", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+    
+    let params = req.params
+    let id = params.id
+
+    let url = api + "view/" + id
+    fetch(url)
+    .then(resp => resp.json())
+    .then(data => {
+        let model
+
+        if (req.session.userid === data.doc.userId) {
+            model = {id: data.doc._id, name: data.doc.name, path: data.doc.path, content: data.doc.content, error:""}
+        } else {
+            model = {id: "", name: "", path: "", content: "", error:"Access Denied"}
+        }
+        //console.log("Edit List", data)
+        
+        res.render("editText", model)
+    })
+})
+
+app.post("/edit/:id", (req, res) => {
+    //console.log("Post Edit", req.body)
+    if (req.body.name != '' && req.body.content != '') {
+
+        let params = req.params
+        let id = params.id
+
+        let data = {
+            name: req.body.name,
+            path: req.body.path,
+            content: req.body.content,
+        }
+        
+        let url = api + "edit/" + id
+        let headers = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data),
+        }
+
+        //console.log("ID to edit: ", id)
+
+        fetch(url, headers)
+        .then(resp => resp.json())
+        .then(data => {
+            res.redirect("/listMe") 
+        })
+    }
 })
 
 app.get("/del/:id", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+
+    let params = req.params
+    let id = params.id
+
+    let url = api + "del/" + id
+
+    //console.log("ID delete: ", id)
+    logger("ID delete: " + id)
+
+    fetch(url)
+    .then(resp => resp.json())
+    .then(data => {
+        //console.log(data)
+
+        res.redirect("/listMe")
+    })
 })
 
 app.get("/list", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+    let url = api + "list"
+
+    fetch(url)
+        .then(resp => resp.json())
+        .then(data => {
+            //console.log(data)
+            let model = {docs:data.data}
+            res.render("list", model);
+        })
 })
 
 app.get("/view/:id", (req, res) => {
@@ -161,6 +292,18 @@ app.get("/view/:id", (req, res) => {
     res.render("login", model);
 })
 
+app.get("/logout", (req, res) => {
+    req.session.destroy(err => {
+        if (err) {
+            //console.log("Session destroy error:", err);
+            logger(err)
+            return res.status(500).send("Could not log out.");
+        }
+
+        res.clearCookie("connect.sid");
+        res.redirect("/");
+    });
+})
 
 // listening code
 app.listen(port, () => {
@@ -174,8 +317,7 @@ function logger(log) {
     let url = api + "logger"
 
     let logData = {
-        log: log, 
-        date: new Date()
+        log: log
     }
 
     let headers = {

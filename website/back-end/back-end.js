@@ -81,41 +81,136 @@ app.post("/register", async (req, res) => {
     res.json(response);
 })
 
-app.get("/addText", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+app.post("/addText", async (req, res) => {
+    let code = 0
+
+    if (req.body.userId != '' && req.body.name != '' && req.body.content != '') {
+        let data = {
+            userId: req.body.userid,
+            name: req.body.name,
+            path: req.body.path,
+            content: req.body.content,
+            date: new Date()
+        }
+
+        await dal.addDocument(DBfile,data)
+        code = 1
+    }
+    let response = {
+        code: code
+    }
+    res.json(response);
 })
 
-app.get("/listMe", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+
+app.post("/listMe", async (req, res) => {
+    let dataBody = req.body
+    let docs = await dal.getDocumentsByTable(DBfile, {userId: dataBody.userId})
+    //console.log(docs)
+
+    let response = {
+        code: 1,
+        data: docs
+    }
+    res.json(response);
 })
 
-app.get("/edit/:id", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+
+app.post("/edit/:id", async (req, res) => {
+
+    let params = req.params
+    let id = params.id
+    let docForm = req.body
+    const docBase = await dal.getDocumentByID(DBfile, id)
+    const doc = docBase[0]
+    
+    //console.log(id, docForm)
+
+    let updatedDoc = {
+        userId: doc.userId,
+        name: docForm.name,
+        path: docForm.path,
+        content: docForm.content,
+        date: new Date()
+    }
+
+    //console.log(updateddoc)
+
+    await dal.updateDocument(DBfile, id, updatedDoc)
+
+    let response = {
+        code: 1
+    }
+
+    res.json(response);
 })
 
-app.get("/del/:id", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+app.get("/del/:id", async (req, res) => {
+
+    let params = req.params
+    let id = params.id
+
+    let response = {
+        code: 1
+    }
+
+    await dal.deleteDocument(DBfile, id)
+
+    res.json(response);
 })
 
-app.get("/list", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+app.get("/list", async (req, res) => {
+    let docs = await dal.getAllDocuments(DBfile)
+    //console.log(docs)
+    let output = []
+
+    for (let index = 0; index < docs.length; index++) {
+        const element = docs[index];
+
+        let user = await dal.getDocumentByID(DBuser, element.userId)
+        //console.log(user)
+
+        let doc = {
+            owner: user[0].username,
+            name: element.name,
+            path: element.path,
+            content: element.content,
+        }
+        //console.log(doc)
+        output.push(doc)
+    }
+
+    //console.log(output)
+
+    let response = {
+        code: 1,
+        data: output
+    }
+    res.json(response);
 })
 
-app.get("/view/:id", (req, res) => {
-    let model = {username: "", password: "", error:""}
-    res.render("login", model);
+app.get("/view/:id", async (req, res) => {
+
+    let params = req.params
+    let id = params.id
+
+    const docBase = await dal.getDocumentByID(DBfile, id)
+    const doc = docBase[0]
+    //console.log(doc)
+
+    let response = {
+        code: 1,
+        doc: doc
+    }
+
+    res.json(response);
 })
 
 app.post("/logger", async (req, res) => {
     let code = 0
 
     let data = req.body.log
-    let date = req.body.date
+    let date = new Date()
 
     let log = {
             info: data,

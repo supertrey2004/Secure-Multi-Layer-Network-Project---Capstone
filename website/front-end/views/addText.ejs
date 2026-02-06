@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Add-Pic</title>
+        <title>Add-Doc</title>
         <link rel="stylesheet" href="css/site.css">
     </head>
     <body>
         <%- include('partials/header.ejs') %>
         <section>
-            <h1>Add-Pic</h1>
+            <h1>Add-Doc</h1>
             <h2><%= error %></h2>
-            <form action="<%= api %>add-pic" method="post" enctype="multipart/form-data">
-                <div>
-                    <input type="hidden" name="userId" value="<%= userid %>">
-                </div>
+            <form action="/addText" method="post" >
                 <div>
                     <label for="category">Name:</label>
                     <input type="text" name="name" value="<%= name %>" placeholder="Name" required/>
                 </div>
                 <div>
-                    <label for="setup">Description:</label>
-                    <input type="text" name="des" value="<%= des %>" placeholder="Description" required/>
+                    <label for="setup">Path:</label>
+                    <input type="text" name="path" value="<%= path %>" placeholder="Path" />
                 </div>
                 <div>
-                    <label for="setup">Image:</label>
-                    <input type="file" id="image" name="image" accept="image/*" required>
+                    <label for="setup">Contents:</label>
+                    <textarea rows="15" cols="80" type="text" name="content" placeholder="Content" required><%= content %></textarea>
                 </div>
                 
                 <input type="submit" value="Submit"/>

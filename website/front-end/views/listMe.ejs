@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>All Docs</title>
+        <title>Your Docs</title>
         <link rel="stylesheet" href="css/site.css">
     </head>
     <body>
         <%- include('partials/header.ejs') %>
         <section>
-            <h1>All Docs</h1>
+            <h1>Your Docs</h1>
             <% for(doc of docs){ %>
                 <div class="pic-Box">
-                    <h2>Title: <%= doc.name %> - Owner: <%= doc.owner %></h2>
+                    <h2>Title: <%= doc.name %></h2>
                     <% if (doc.path != ''){ %>
                     <h3>Path: <%= doc.path %></h3>
                     <% } %>
                     <h4>Contents:</h4>
                     <h3><%= doc.content %></h3>
+                    <br/>
+                    <br/>
+                    <a href="/del/<%= doc._id %>" class="button">Delete</a>
+                    <a href="/edit/<%= doc._id %>" class="button">Edit</a>
                 </div>
             <% } %>
         </section>
