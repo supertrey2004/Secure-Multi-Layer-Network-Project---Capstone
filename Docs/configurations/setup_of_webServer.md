@@ -14,3 +14,16 @@
 3. Confirm system operations and update
 
 4. Installing softwares
+    - nodeJS
+    > - Base Apps  
+    > curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -  
+    > sudo apt install -y nodejs  
+    > sudo apt install -y git  
+    > sudo apt install -y nginx 
+    > sudo npm install -g pm2   
+    > - Firewall Setup  
+    > sudo ufw allow OpenSSH  
+    > sudo ufw allow 'Nginx Full'  
+    > sudo ufw enable  
+    > - Startup  
+    > sudo systemctl enable nginx  
