@@ -29,37 +29,38 @@
     > sudo systemctl enable nginx  
 
 5. Installing website
-    > cd /var/www
-    > git clone -b Website https://github.com/supertrey2004/Secure-Multi-Layer-Network-Project---Capstone.git website
-    > cd /var/www/website/website/front-end
-    > npm install
-    > nano .env
-    > - Set it up with the corresponding values
-    > pm2 start front-end.js --name frontend
-    > pm2 save
-    > cd /var/www/website/website/back-end
-    > npm install
-    > nano .env
-    > - Set it up with the corresponding values
-    > pm2 start back-end.js --name backend
-    > pm2 save
-    > pm2 startup
-    > - Now the Nginx working
-    > sudo nano /etc/nginx/sites-available/website
-    > server {
-    >     listen 80;
-    >     server_name _;
-    >     location / {
-    >         proxy_pass http://localhost:4000;
-    >         proxy_http_version 1.1;
-    >         proxy_set_header Upgrade $http_upgrade;
-    >         proxy_set_header Connection 'upgrade';
-    >         proxy_set_header Host $host;
-    >         proxy_cache_bypass $http_upgrade;
-    >     }
-    > }
-    > sudo ln -s /etc/nginx/sites-available/website /etc/nginx/sites-enabled/
-    > sudo rm /etc/nginx/sites-enabled/default
-    > sudo nginx -t
-    > sudo systemctl reload nginx
+    > - Getting website
+    > cd /var/www  
+    > git clone -b Website https://github.com/supertrey2004/Secure-Multi-Layer-Network-Project---Capstone.git website  
+    > cd /var/www/website/website/front-end  
+    > npm install  
+    > nano .env  
+    > - Set it up with the corresponding values  
+    > pm2 start front-end.js --name frontend  
+    > pm2 save  
+    > cd /var/www/website/website/back-end  
+    > npm install  
+    > nano .env  
+    > - Set it up with the corresponding values  
+    > pm2 start back-end.js --name backend  
+    > pm2 save  
+    > pm2 startup  
+    > - Now the Nginx working  
+    > sudo nano /etc/nginx/sites-available/website  
+    > server {  
+    >     listen 80;  
+    >     server_name _;  
+    >     location / {  
+    >         proxy_pass http://localhost:4000;  
+    >         proxy_http_version 1.1;  
+    >         proxy_set_header Upgrade $http_upgrade;  
+    >         proxy_set_header Connection 'upgrade';  
+    >         proxy_set_header Host $host;  
+    >         proxy_cache_bypass $http_upgrade;  
+    >     }  
+    > }  
+    > sudo ln -s /etc/nginx/sites-available/website /etc/nginx/sites-enabled/  
+    > sudo rm /etc/nginx/sites-enabled/default  
+    > sudo nginx -t  
+    > sudo systemctl reload nginx  
 
