@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args='nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script "default or (discovery and safe)" 192.168.105.0/24' profile_name="Slow comprehensive scan" scanner="nmap" start="1770328717" startstr="Thu Feb  5 14:58:37 2026" version="7.98" xmloutputversion="1.04"><scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3006,3011,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5985-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"></scaninfo><scaninfo type="udp" protocol="udp" numservices="1000" services="2-3,7,9,13,17,19-23,37-38,42,49,53,67-69,80,88,111-113,120,123,135-139,158,161-162,177,192,199,207,217,363,389,402,407,427,434,443,445,464,497,500,502,512-515,517-518,520,539,559,593,623,626,631,639,643,657,664,682-689,764,767,772-776,780-782,786,789,800,814,826,829,838,902-903,944,959,965,983,989-990,996-1001,1007-1008,1012-1014,1019-1051,1053-1060,1064-1070,1072,1080-1081,1087-1088,1090,1100-1101,1105,1124,1200,1214,1234,1346,1419,1433-1434,1455,1457,1484-1485,1524,1645-1646,1701,1718-1719,1761,1782,1804,1812-1813,1885-1886,1900-1901,1993,2000,2002,2048-2049,2051,2148,2160-2161,2222-2223,2343,2345,2362,2967,3052,3130,3283,3296,3343,3389,3401,3456-3457,3659,3664,3702-3703,4000,4008,4045,4444,4500,4666,4672,5000-5003,5010,5050,5060,5093,5351,5353,5355,5500,5555,5632,6000-6002,6004,6050,6346-6347,6970-6971,7000,7938,8000-8001,8010,8181,8193,8900,9000-9001,9020,9103,9199-9200,9370,9876-9877,9950,10000,10080,11487,16086,16402,16420,16430,16433,16449,16498,16503,16545,16548,16573,16674,16680,16697,16700,16708,16711,16739,16766,16779,16786,16816,16829,16832,16838-16839,16862,16896,16912,16918-16919,16938-16939,16947-16948,16970,16972,16974,17006,17018,17077,17091,17101,17146,17184-17185,17205,17207,17219,17236-17237,17282,17302,17321,17331-17332,17338,17359,17417,17423-17424,17455,17459,17468,17487,17490,17494,17505,17533,17549,17573,17580,17585,17592,17605,17615-17616,17629,17638,17663,17673-17674,17683,17726,17754,17762,17787,17814,17823-17824,17836,17845,17888,17939,17946,17989,18004,18081,18113,18134,18156,18228,18234,18250,18255,18258,18319,18331,18360,18373,18449,18485,18543,18582,18605,18617,18666,18669,18676,18683,18807,18818,18821,18830,18832,18835,18869,18883,18888,18958,18980,18985,18987,18991,18994,18996,19017,19022,19039,19047,19075,19096,19120,19130,19140-19141,19154,19161,19165,19181,19193,19197,19222,19227,19273,19283,19294,19315,19322,19332,19374,19415,19482,19489,19500,19503-19504,19541,19600,19605,19616,19624-19625,19632,19639,19647,19650,19660,19662-19663,19682-19683,19687,19695,19707,19717-19719,19722,19728,19789,19792,19933,19935-19936,19956,19995,19998,20003-20004,20019,20031,20082,20117,20120,20126,20129,20146,20154,20164,20206,20217,20249,20262,20279,20288,20309,20313,20326,20359-20360,20366,20380,20389,20409,20411,20423-20425,20445,20449,20464-20465,20518,20522,20525,20540,20560,20665,20678-20679,20710,20717,20742,20752,20762,20791,20817,20842,20848,20851,20865,20872,20876,20884,20919,21000,21016,21060,21083,21104,21111,21131,21167,21186,21206-21207,21212,21247,21261,21282,21298,21303,21318,21320,21333,21344,21354,21358,21360,21364,21366,21383,21405,21454,21468,21476,21514,21524-21525,21556,21566,21568,21576,21609,21621,21625,21644,21649,21655,21663,21674,21698,21702,21710,21742,21780,21784,21800,21803,21834,21842,21847,21868,21898,21902,21923,21948,21967,22029,22043,22045,22053,22055,22105,22109,22123-22124,22341,22692,22695,22739,22799,22846,22914,22986,22996,23040,23176,23354,23531,23557,23608,23679,23781,23965,23980,24007,24279,24511,24594,24606,24644,24854,24910,25003,25157,25240,25280,25337,25375,25462,25541,25546,25709,25931,26407,26415,26720,26872,26966,27015,27195,27444,27473,27482,27707,27892,27899,28122,28369,28465,28493,28543,28547,28641,28840,28973,29078,29243,29256,29810,29823,29977,30263,30303,30365,30544,30656,30697,30704,30718,30975,31059,31073,31109,31189,31195,31335,31337,31365,31625,31681,31731,31891,32345,32385,32528,32768-32780,32798,32815,32818,32931,33030,33249,33281,33354-33355,33459,33717,33744,33866,33872,34038,34079,34125,34358,34422,34433,34555,34570,34577-34580,34758,34796,34855,34861-34862,34892,35438,35702,35777,35794,36108,36206,36384,36458,36489,36669,36778,36893,36945,37144,37212,37393,37444,37602,37761,37783,37813,37843,38037,38063,38293,38412,38498,38615,39213,39217,39632,39683,39714,39723,39888,40019,40116,40441,40539,40622,40708,40711,40724,40732,40805,40847,40866,40915,41058,41081,41308,41370,41446,41524,41638,41702,41774,41896,41967,41971,42056,42172,42313,42431,42434,42508,42557,42577,42627,42639,43094,43195,43370,43514,43686,43824,43967,44101,44160,44179,44185,44190,44253,44334,44508,44923,44946,44968,45247,45380,45441,45685,45722,45818,45928,46093,46532,46836,47624,47765,47772,47808,47915,47981,48078,48189,48255,48455,48489,48761,49152-49163,49165-49182,49184-49202,49204-49205,49207-49216,49220,49222,49226,49259,49262,49306,49350,49360,49393,49396,49503,49640,49968,50099,50164,50497,50612,50708,50919,51255,51456,51554,51586,51690,51717,51905,51972,52144,52225,52503,53006,53037,53571,53589,53838,54094,54114,54281,54321,54711,54807,54925,55043,55544,55587,56141,57172,57409-57410,57813,57843,57958,57977,58002,58075,58178,58419,58631,58640,58797,59193,59207,59765,59846,60172,60381,60423,61024,61142,61319,61322,61370,61412,61481,61550,61685,61961,62154,62287,62575,62677,62699,62958,63420,63555,64080,64481,64513,64590,64727,65024"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-05 14:58 -0700
+NSE: Loaded 303 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:58
+NSE: [mtrace] A source IP must be provided through fromip argument.
+NSE: [shodan-api] Error: Please specify your ShodanAPI key with the shodan-api.apikey argument
+No profinet devices in the subnet
+Completed NSE at 14:59, 10.95s elapsed
+Initiating NSE at 14:59
+Completed NSE at 14:59, 0.00s elapsed
+Initiating NSE at 14:59
+Completed NSE at 14:59, 0.00s elapsed
+Pre-scan script results:
+| targets-ipv6-multicast-invalid-dst: 
+|   IP: fe80::215:5dff:fe68:a10  MAC: 00:15:5d:68:0a:10  IFACE: eth0
+|_  Use --script-args=newtargets to add the results as targets
+| targets-ipv6-multicast-echo: 
+|   IP: fe80::215:5dff:fe68:a10  MAC: 00:15:5d:68:0a:10  IFACE: eth0
+|   IP: fe80::215:5dff:fe68:a0e  MAC: 00:15:5d:68:0a:0e  IFACE: eth0
+|_  Use --script-args=newtargets to add the results as targets
+| targets-ipv6-multicast-mld: 
+|   IP: fe80::215:5dff:fe68:a10  MAC: 00:15:5d:68:0a:10  IFACE: eth0
+| 
+|_  Use --script-args=newtargets to add the results as targets
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+|_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+| targets-sniffer: Sniffed 13 address(es). 
+| 192.168.105.15
+| 224.0.0.1
+| fe80::215:5dff:fe68:a10
+| c0a8:690f::
+| fe80::215:5dff:fe68:a0e
+| 224.0.0.13
+| 0.0.0.0
+| 192.168.105.10
+| 224.0.0.251
+| 192.168.105.100
+| 239.255.255.250
+| 224.0.23.12
+|_224.0.0.252
+Bug in lltd-discovery: no string output.
+|_hostmap-robtex: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+| broadcast-igmp-discovery: 
+|   192.168.105.10
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.105.100
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.252
+|     Description: Link-local Multicast Name Resolution (rfc4795)
+|   192.168.105.100
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+Initiating ARP Ping Scan at 14:59
+Scanning 255 hosts [1 port/host]
+Completed ARP Ping Scan at 14:59, 3.61s elapsed (255 total hosts)
+Initiating Parallel DNS resolution of 5 hosts. at 14:59
+Completed Parallel DNS resolution of 5 hosts. at 14:59, 0.52s elapsed
+Nmap scan report for 192.168.105.0 [host down]
+Nmap scan report for 192.168.105.3 [host down]
+Nmap scan report for 192.168.105.4 [host down]
+Nmap scan report for 192.168.105.5 [host down]
+Nmap scan report for 192.168.105.6 [host down]
+Nmap scan report for 192.168.105.7 [host down]
+Nmap scan report for 192.168.105.8 [host down]
+Nmap scan report for 192.168.105.9 [host down]
+Nmap scan report for 192.168.105.11 [host down]
+Nmap scan report for 192.168.105.12 [host down]
+Nmap scan report for 192.168.105.13 [host down]
+Nmap scan report for 192.168.105.14 [host down]
+Nmap scan report for 192.168.105.16 [host down]
+Nmap scan report for 192.168.105.17 [host down]
+Nmap scan report for 192.168.105.18 [host down]
+Nmap scan report for 192.168.105.19 [host down]
+Nmap scan report for 192.168.105.21 [host down]
+Nmap scan report for 192.168.105.22 [host down]
+Nmap scan report for 192.168.105.23 [host down]
+Nmap scan report for 192.168.105.24 [host down]
+Nmap scan report for 192.168.105.25 [host down]
+Nmap scan report for 192.168.105.26 [host down]
+Nmap scan report for 192.168.105.27 [host down]
+Nmap scan report for 192.168.105.28 [host down]
+Nmap scan report for 192.168.105.29 [host down]
+Nmap scan report for 192.168.105.30 [host down]
+Nmap scan report for 192.168.105.31 [host down]
+Nmap scan report for 192.168.105.32 [host down]
+Nmap scan report for 192.168.105.33 [host down]
+Nmap scan report for 192.168.105.34 [host down]
+Nmap scan report for 192.168.105.35 [host down]
+Nmap scan report for 192.168.105.36 [host down]
+Nmap scan report for 192.168.105.37 [host down]
+Nmap scan report for 192.168.105.38 [host down]
+Nmap scan report for 192.168.105.39 [host down]
+Nmap scan report for 192.168.105.40 [host down]
+Nmap scan report for 192.168.105.41 [host down]
+Nmap scan report for 192.168.105.42 [host down]
+Nmap scan report for 192.168.105.43 [host down]
+Nmap scan report for 192.168.105.44 [host down]
+Nmap scan report for 192.168.105.45 [host down]
+Nmap scan report for 192.168.105.46 [host down]
+Nmap scan report for 192.168.105.47 [host down]
+Nmap scan report for 192.168.105.48 [host down]
+Nmap scan report for 192.168.105.49 [host down]
+Nmap scan report for 192.168.105.50 [host down]
+Nmap scan report for 192.168.105.51 [host down]
+Nmap scan report for 192.168.105.52 [host down]
+Nmap scan report for 192.168.105.53 [host down]
+Nmap scan report for 192.168.105.54 [host down]
+Nmap scan report for 192.168.105.55 [host down]
+Nmap scan report for 192.168.105.56 [host down]
+Nmap scan report for 192.168.105.57 [host down]
+Nmap scan report for 192.168.105.58 [host down]
+Nmap scan report for 192.168.105.59 [host down]
+Nmap scan report for 192.168.105.60 [host down]
+Nmap scan report for 192.168.105.61 [host down]
+Nmap scan report for 192.168.105.62 [host down]
+Nmap scan report for 192.168.105.63 [host down]
+Nmap scan report for 192.168.105.64 [host down]
+Nmap scan report for 192.168.105.65 [host down]
+Nmap scan report for 192.168.105.66 [host down]
+Nmap scan report for 192.168.105.67 [host down]
+Nmap scan report for 192.168.105.68 [host down]
+Nmap scan report for 192.168.105.69 [host down]
+Nmap scan report for 192.168.105.70 [host down]
+Nmap scan report for 192.168.105.71 [host down]
+Nmap scan report for 192.168.105.72 [host down]
+Nmap scan report for 192.168.105.73 [host down]
+Nmap scan report for 192.168.105.74 [host down]
+Nmap scan report for 192.168.105.75 [host down]
+Nmap scan report for 192.168.105.76 [host down]
+Nmap scan report for 192.168.105.77 [host down]
+Nmap scan report for 192.168.105.78 [host down]
+Nmap scan report for 192.168.105.79 [host down]
+Nmap scan report for 192.168.105.80 [host down]
+Nmap scan report for 192.168.105.81 [host down]
+Nmap scan report for 192.168.105.82 [host down]
+Nmap scan report for 192.168.105.83 [host down]
+Nmap scan report for 192.168.105.84 [host down]
+Nmap scan report for 192.168.105.85 [host down]
+Nmap scan report for 192.168.105.86 [host down]
+Nmap scan report for 192.168.105.87 [host down]
+Nmap scan report for 192.168.105.88 [host down]
+Nmap scan report for 192.168.105.89 [host down]
+Nmap scan report for 192.168.105.90 [host down]
+Nmap scan report for 192.168.105.91 [host down]
+Nmap scan report for 192.168.105.92 [host down]
+Nmap scan report for 192.168.105.93 [host down]
+Nmap scan report for 192.168.105.94 [host down]
+Nmap scan report for 192.168.105.95 [host down]
+Nmap scan report for 192.168.105.96 [host down]
+Nmap scan report for 192.168.105.97 [host down]
+Nmap scan report for 192.168.105.98 [host down]
+Nmap scan report for 192.168.105.99 [host down]
+Nmap scan report for 192.168.105.101 [host down]
+Nmap scan report for 192.168.105.102 [host down]
+Nmap scan report for 192.168.105.103 [host down]
+Nmap scan report for 192.168.105.104 [host down]
+Nmap scan report for 192.168.105.105 [host down]
+Nmap scan report for 192.168.105.106 [host down]
+Nmap scan report for 192.168.105.107 [host down]
+Nmap scan report for 192.168.105.108 [host down]
+Nmap scan report for 192.168.105.109 [host down]
+Nmap scan report for 192.168.105.110 [host down]
+Nmap scan report for 192.168.105.111 [host down]
+Nmap scan report for 192.168.105.112 [host down]
+Nmap scan report for 192.168.105.113 [host down]
+Nmap scan report for 192.168.105.114 [host down]
+Nmap scan report for 192.168.105.115 [host down]
+Nmap scan report for 192.168.105.116 [host down]
+Nmap scan report for 192.168.105.117 [host down]
+Nmap scan report for 192.168.105.118 [host down]
+Nmap scan report for 192.168.105.119 [host down]
+Nmap scan report for 192.168.105.120 [host down]
+Nmap scan report for 192.168.105.121 [host down]
+Nmap scan report for 192.168.105.122 [host down]
+Nmap scan report for 192.168.105.123 [host down]
+Nmap scan report for 192.168.105.124 [host down]
+Nmap scan report for 192.168.105.125 [host down]
+Nmap scan report for 192.168.105.126 [host down]
+Nmap scan report for 192.168.105.127 [host down]
+Nmap scan report for 192.168.105.128 [host down]
+Nmap scan report for 192.168.105.129 [host down]
+Nmap scan report for 192.168.105.130 [host down]
+Nmap scan report for 192.168.105.131 [host down]
+Nmap scan report for 192.168.105.132 [host down]
+Nmap scan report for 192.168.105.133 [host down]
+Nmap scan report for 192.168.105.134 [host down]
+Nmap scan report for 192.168.105.135 [host down]
+Nmap scan report for 192.168.105.136 [host down]
+Nmap scan report for 192.168.105.137 [host down]
+Nmap scan report for 192.168.105.138 [host down]
+Nmap scan report for 192.168.105.139 [host down]
+Nmap scan report for 192.168.105.140 [host down]
+Nmap scan report for 192.168.105.141 [host down]
+Nmap scan report for 192.168.105.142 [host down]
+Nmap scan report for 192.168.105.143 [host down]
+Nmap scan report for 192.168.105.144 [host down]
+Nmap scan report for 192.168.105.145 [host down]
+Nmap scan report for 192.168.105.146 [host down]
+Nmap scan report for 192.168.105.147 [host down]
+Nmap scan report for 192.168.105.148 [host down]
+Nmap scan report for 192.168.105.149 [host down]
+Nmap scan report for 192.168.105.150 [host down]
+Nmap scan report for 192.168.105.151 [host down]
+Nmap scan report for 192.168.105.152 [host down]
+Nmap scan report for 192.168.105.153 [host down]
+Nmap scan report for 192.168.105.154 [host down]
+Nmap scan report for 192.168.105.155 [host down]
+Nmap scan report for 192.168.105.156 [host down]
+Nmap scan report for 192.168.105.157 [host down]
+Nmap scan report for 192.168.105.158 [host down]
+Nmap scan report for 192.168.105.159 [host down]
+Nmap scan report for 192.168.105.160 [host down]
+Nmap scan report for 192.168.105.161 [host down]
+Nmap scan report for 192.168.105.162 [host down]
+Nmap scan report for 192.168.105.163 [host down]
+Nmap scan report for 192.168.105.164 [host down]
+Nmap scan report for 192.168.105.165 [host down]
+Nmap scan report for 192.168.105.166 [host down]
+Nmap scan report for 192.168.105.167 [host down]
+Nmap scan report for 192.168.105.168 [host down]
+Nmap scan report for 192.168.105.169 [host down]
+Nmap scan report for 192.168.105.170 [host down]
+Nmap scan report for 192.168.105.171 [host down]
+Nmap scan report for 192.168.105.172 [host down]
+Nmap scan report for 192.168.105.173 [host down]
+Nmap scan report for 192.168.105.174 [host down]
+Nmap scan report for 192.168.105.175 [host down]
+Nmap scan report for 192.168.105.176 [host down]
+Nmap scan report for 192.168.105.177 [host down]
+Nmap scan report for 192.168.105.178 [host down]
+Nmap scan report for 192.168.105.179 [host down]
+Nmap scan report for 192.168.105.180 [host down]
+Nmap scan report for 192.168.105.181 [host down]
+Nmap scan report for 192.168.105.182 [host down]
+Nmap scan report for 192.168.105.183 [host down]
+Nmap scan report for 192.168.105.184 [host down]
+Nmap scan report for 192.168.105.185 [host down]
+Nmap scan report for 192.168.105.186 [host down]
+Nmap scan report for 192.168.105.187 [host down]
+Nmap scan report for 192.168.105.188 [host down]
+Nmap scan report for 192.168.105.189 [host down]
+Nmap scan report for 192.168.105.190 [host down]
+Nmap scan report for 192.168.105.191 [host down]
+Nmap scan report for 192.168.105.192 [host down]
+Nmap scan report for 192.168.105.193 [host down]
+Nmap scan report for 192.168.105.194 [host down]
+Nmap scan report for 192.168.105.195 [host down]
+Nmap scan report for 192.168.105.196 [host down]
+Nmap scan report for 192.168.105.197 [host down]
+Nmap scan report for 192.168.105.198 [host down]
+Nmap scan report for 192.168.105.199 [host down]
+Nmap scan report for 192.168.105.200 [host down]
+Nmap scan report for 192.168.105.201 [host down]
+Nmap scan report for 192.168.105.202 [host down]
+Nmap scan report for 192.168.105.203 [host down]
+Nmap scan report for 192.168.105.204 [host down]
+Nmap scan report for 192.168.105.205 [host down]
+Nmap scan report for 192.168.105.206 [host down]
+Nmap scan report for 192.168.105.207 [host down]
+Nmap scan report for 192.168.105.208 [host down]
+Nmap scan report for 192.168.105.209 [host down]
+Nmap scan report for 192.168.105.210 [host down]
+Nmap scan report for 192.168.105.211 [host down]
+Nmap scan report for 192.168.105.212 [host down]
+Nmap scan report for 192.168.105.213 [host down]
+Nmap scan report for 192.168.105.214 [host down]
+Nmap scan report for 192.168.105.215 [host down]
+Nmap scan report for 192.168.105.216 [host down]
+Nmap scan report for 192.168.105.217 [host down]
+Nmap scan report for 192.168.105.218 [host down]
+Nmap scan report for 192.168.105.219 [host down]
+Nmap scan report for 192.168.105.220 [host down]
+Nmap scan report for 192.168.105.221 [host down]
+Nmap scan report for 192.168.105.222 [host down]
+Nmap scan report for 192.168.105.223 [host down]
+Nmap scan report for 192.168.105.224 [host down]
+Nmap scan report for 192.168.105.225 [host down]
+Nmap scan report for 192.168.105.226 [host down]
+Nmap scan report for 192.168.105.227 [host down]
+Nmap scan report for 192.168.105.228 [host down]
+Nmap scan report for 192.168.105.229 [host down]
+Nmap scan report for 192.168.105.230 [host down]
+Nmap scan report for 192.168.105.231 [host down]
+Nmap scan report for 192.168.105.232 [host down]
+Nmap scan report for 192.168.105.233 [host down]
+Nmap scan report for 192.168.105.234 [host down]
+Nmap scan report for 192.168.105.235 [host down]
+Nmap scan report for 192.168.105.236 [host down]
+Nmap scan report for 192.168.105.237 [host down]
+Nmap scan report for 192.168.105.238 [host down]
+Nmap scan report for 192.168.105.239 [host down]
+Nmap scan report for 192.168.105.240 [host down]
+Nmap scan report for 192.168.105.241 [host down]
+Nmap scan report for 192.168.105.242 [host down]
+Nmap scan report for 192.168.105.243 [host down]
+Nmap scan report for 192.168.105.244 [host down]
+Nmap scan report for 192.168.105.245 [host down]
+Nmap scan report for 192.168.105.246 [host down]
+Nmap scan report for 192.168.105.247 [host down]
+Nmap scan report for 192.168.105.248 [host down]
+Nmap scan report for 192.168.105.249 [host down]
+Nmap scan report for 192.168.105.250 [host down]
+Nmap scan report for 192.168.105.251 [host down]
+Nmap scan report for 192.168.105.252 [host down]
+Nmap scan report for 192.168.105.253 [host down]
+Nmap scan report for 192.168.105.254 [host down]
+Nmap scan report for 192.168.105.255 [host down]
+Initiating Parallel DNS resolution of 1 host. at 14:59
+Completed Parallel DNS resolution of 1 host. at 14:59, 0.52s elapsed
+Initiating SYN Stealth Scan at 14:59
+Scanning 5 hosts [1000 ports/host]
+Discovered open port 22/tcp on 192.168.105.20
+Completed SYN Stealth Scan against 192.168.105.20 in 0.53s (4 hosts left)
+Discovered open port 135/tcp on 192.168.105.100
+Discovered open port 135/tcp on 192.168.105.10
+Discovered open port 445/tcp on 192.168.105.10
+Discovered open port 53/tcp on 192.168.105.10
+Discovered open port 139/tcp on 192.168.105.10
+Discovered open port 80/tcp on 192.168.105.1
+Discovered open port 53/tcp on 192.168.105.1
+SYN Stealth Scan Timing: About 29.08% done; ETC: 15:00 (0:01:16 remaining)
+SYN Stealth Scan Timing: About 30.44% done; ETC: 15:02 (0:02:19 remaining)
+SYN Stealth Scan Timing: About 31.73% done; ETC: 15:03 (0:03:16 remaining)
+Increasing send delay for 192.168.105.100 from 0 to 5 due to 11 out of 16 dropped probes since last increase.
+SYN Stealth Scan Timing: About 33.45% done; ETC: 15:05 (0:04:01 remaining)
+Increasing send delay for 192.168.105.10 from 0 to 5 due to 11 out of 19 dropped probes since last increase.
+Discovered open port 3268/tcp on 192.168.105.10
+SYN Stealth Scan Timing: About 35.04% done; ETC: 15:06 (0:04:40 remaining)
+Increasing send delay for 192.168.105.1 from 0 to 5 due to 11 out of 16 dropped probes since last increase.
+SYN Stealth Scan Timing: About 36.98% done; ETC: 15:07 (0:05:08 remaining)
+SYN Stealth Scan Timing: About 38.37% done; ETC: 15:08 (0:05:39 remaining)
+Increasing send delay for 192.168.105.10 from 5 to 10 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 192.168.105.100 from 5 to 10 due to 11 out of 16 dropped probes since last increase.
+SYN Stealth Scan Timing: About 41.34% done; ETC: 15:09 (0:06:08 remaining)
+Increasing send delay for 192.168.105.1 from 5 to 10 due to 11 out of 14 dropped probes since last increase.
+Discovered open port 593/tcp on 192.168.105.10
+SYN Stealth Scan Timing: About 59.07% done; ETC: 15:12 (0:05:33 remaining)
+Discovered open port 389/tcp on 192.168.105.10
+SYN Stealth Scan Timing: About 65.24% done; ETC: 15:13 (0:04:51 remaining)
+Discovered open port 3269/tcp on 192.168.105.10
+Completed SYN Stealth Scan against 192.168.105.2 in 598.93s (3 hosts left)
+Discovered open port 464/tcp on 192.168.105.10
+SYN Stealth Scan Timing: About 71.00% done; ETC: 15:13 (0:04:07 remaining)
+Discovered open port 88/tcp on 192.168.105.10
+SYN Stealth Scan Timing: About 77.48% done; ETC: 15:12 (0:03:04 remaining)
+Discovered open port 5985/tcp on 192.168.105.10
+SYN Stealth Scan Timing: About 82.48% done; ETC: 15:12 (0:02:21 remaining)
+Discovered open port 636/tcp on 192.168.105.10
+Completed SYN Stealth Scan against 192.168.105.10 in 671.30s (2 hosts left)
+SYN Stealth Scan Timing: About 87.94% done; ETC: 15:12 (0:01:38 remaining)
+Completed SYN Stealth Scan against 192.168.105.100 in 727.25s (1 host left)
+SYN Stealth Scan Timing: About 93.23% done; ETC: 15:13 (0:00:59 remaining)
+SYN Stealth Scan Timing: About 96.39% done; ETC: 15:14 (0:00:33 remaining)
+Completed SYN Stealth Scan at 15:14, 931.18s elapsed (5000 total ports)
+Initiating UDP Scan at 15:14
+Scanning 5 hosts [1000 ports/host]
+Increasing send delay for 192.168.105.20 from 0 to 50 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 192.168.105.20 from 50 to 100 due to max_successful_tryno increase to 5
+Increasing send delay for 192.168.105.20 from 100 to 200 due to max_successful_tryno increase to 6
+UDP Scan Timing: About 7.95% done; ETC: 15:21 (0:05:59 remaining)
+Increasing send delay for 192.168.105.10 from 0 to 50 due to 11 out of 14 dropped probes since last increase.
+UDP Scan Timing: About 10.91% done; ETC: 15:24 (0:08:18 remaining)
+Increasing send delay for 192.168.105.100 from 0 to 50 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 192.168.105.1 from 0 to 50 due to 11 out of 12 dropped probes since last increase.
+UDP Scan Timing: About 18.40% done; ETC: 15:22 (0:06:44 remaining)
+Increasing send delay for 192.168.105.10 from 50 to 100 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 192.168.105.100 from 50 to 100 due to 11 out of 14 dropped probes since last increase.
+Discovered open port 53/udp on 192.168.105.10
+Increasing send delay for 192.168.105.1 from 50 to 100 due to 11 out of 13 dropped probes since last increase.
+UDP Scan Timing: About 32.15% done; ETC: 15:23 (0:06:16 remaining)
+Increasing send delay for 192.168.105.100 from 100 to 200 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 192.168.105.1 from 100 to 200 due to 11 out of 12 dropped probes since last increase.
+Completed UDP Scan against 192.168.105.2 in 200.53s (4 hosts left)
+Discovered open port 53/udp on 192.168.105.1
+Increasing send delay for 192.168.105.10 from 100 to 200 due to 11 out of 16 dropped probes since last increase.
+UDP Scan Timing: About 37.44% done; ETC: 15:23 (0:05:48 remaining)
+Discovered open port 389/udp on 192.168.105.10
+Increasing send delay for 192.168.105.100 from 200 to 400 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 192.168.105.1 from 200 to 400 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 192.168.105.10 from 200 to 400 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 192.168.105.20 from 200 to 400 due to 79 out of 196 dropped probes since last increase.
+Increasing send delay for 192.168.105.1 from 400 to 800 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 192.168.105.100 from 400 to 800 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 192.168.105.20 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 192.168.105.10 from 400 to 800 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 192.168.105.1 from 800 to 1000 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for 192.168.105.100 from 800 to 1000 due to 11 out of 16 dropped probes since last increase.
+Increasing send delay for 192.168.105.10 from 800 to 1000 due to 11 out of 16 dropped probes since last increase.
+UDP Scan Timing: About 60.18% done; ETC: 15:30 (0:06:08 remaining)
+UDP Scan Timing: About 70.94% done; ETC: 15:33 (0:05:21 remaining)
+Discovered open port 88/udp on 192.168.105.10
+Discovered open port 137/udp on 192.168.105.10
+UDP Scan Timing: About 77.75% done; ETC: 15:34 (0:04:26 remaining)
+Discovered open port 123/udp on 192.168.105.10
+Completed UDP Scan against 192.168.105.20 in 1077.67s (3 hosts left)
+UDP Scan Timing: About 84.36% done; ETC: 15:36 (0:03:26 remaining)
+Discovered open port 123/udp on 192.168.105.1
+UDP Scan Timing: About 89.93% done; ETC: 15:39 (0:02:28 remaining)
+UDP Scan Timing: About 93.95% done; ETC: 15:40 (0:01:35 remaining)
+UDP Scan Timing: About 96.53% done; ETC: 15:41 (0:00:56 remaining)
+UDP Scan Timing: About 98.07% done; ETC: 15:42 (0:00:32 remaining)
+Completed UDP Scan against 192.168.105.10 in 1628.94s (2 hosts left)
+Completed UDP Scan against 192.168.105.100 in 1656.35s (1 host left)
+Completed UDP Scan at 15:44, 1796.04s elapsed (5000 total ports)
+Initiating Service scan at 15:44
+Scanning 4011 services on 5 hosts
+Service scan Timing: About 0.32% done
+Service scan Timing: About 0.92% done
+Service scan Timing: About 0.95% done
+Service scan Timing: About 1.67% done; ETC: 19:58 (4:09:31 remaining)
+Service scan Timing: About 1.69% done; ETC: 20:33 (4:43:31 remaining)
+Service scan Timing: About 2.42% done; ETC: 19:46 (3:56:21 remaining)
+Service scan Timing: About 2.44% done; ETC: 20:11 (4:20:32 remaining)
+Service scan Timing: About 3.16% done; ETC: 19:43 (3:51:42 remaining)
+Service scan Timing: About 3.19% done; ETC: 20:02 (4:10:05 remaining)
+Service scan Timing: About 3.91% done; ETC: 19:41 (3:47:46 remaining)
+Service scan Timing: About 3.93% done; ETC: 19:54 (4:00:31 remaining)
+Service scan Timing: About 4.66% done; ETC: 19:38 (3:43:11 remaining)
+Service scan Timing: About 5.30% done; ETC: 19:25 (3:29:30 remaining)
+Service scan Timing: About 5.40% done; ETC: 19:38 (3:40:53 remaining)
+Service scan Timing: About 6.05% done; ETC: 19:26 (3:28:35 remaining)
+Service scan Timing: About 6.18% done; ETC: 19:43 (3:43:51 remaining)
+Service scan Timing: About 7.35% done; ETC: 19:29 (3:28:33 remaining)
+Service scan Timing: About 10.51% done; ETC: 19:24 (3:17:01 remaining)
+Service scan Timing: About 15.09% done; ETC: 19:23 (3:05:53 remaining)
+Service scan Timing: About 20.94% done; ETC: 19:25 (2:54:55 remaining)
+Service scan Timing: About 26.27% done; ETC: 19:26 (2:43:40 remaining)
+Service scan Timing: About 31.47% done; ETC: 19:26 (2:32:07 remaining)
+Service scan Timing: About 36.63% done; ETC: 19:26 (2:20:33 remaining)
+Service scan Timing: About 41.71% done; ETC: 19:26 (2:09:22 remaining)
+Service scan Timing: About 47.01% done; ETC: 19:27 (1:57:55 remaining)
+Service scan Timing: About 51.82% done; ETC: 19:25 (1:46:39 remaining)
+Service scan Timing: About 56.97% done; ETC: 19:26 (1:35:22 remaining)
+Service scan Timing: About 61.78% done; ETC: 19:25 (1:24:16 remaining)
+Service scan Timing: About 66.91% done; ETC: 19:25 (1:12:58 remaining)
+Service scan Timing: About 72.04% done; ETC: 19:26 (1:01:55 remaining)
+Service scan Timing: About 77.09% done; ETC: 19:26 (0:50:49 remaining)
+Service scan Timing: About 82.05% done; ETC: 19:25 (0:39:42 remaining)
+Service scan Timing: About 87.08% done; ETC: 19:25 (0:28:35 remaining)
+Service scan Timing: About 92.11% done; ETC: 19:25 (0:17:28 remaining)
+Service scan Timing: About 97.14% done; ETC: 19:26 (0:06:21 remaining)
+Completed Service scan at 19:26, 13295.31s elapsed (4016 services on 5 hosts)
+Initiating OS detection (try #1) against 5 hosts
+Retrying OS detection (try #2) against 4 hosts
+NSE: Script scanning 5 hosts.
+Initiating NSE at 19:26
+Windows does not have adequate raw socket support.
+NSE: [ip-forwarding] Required argument ip-forwarding.target not given
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+NSE: [ip-forwarding] Required argument ip-forwarding.target not given
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+NSE: [ip-forwarding] Required argument ip-forwarding.target not given
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+NSE: [ip-forwarding] Required argument ip-forwarding.target not given
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+NSE: [ip-forwarding] Required argument ip-forwarding.target not given
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+Completed NSE at 23:21, 14123.45s elapsed
+Initiating NSE at 23:21
+Completed NSE at 23:27, 352.55s elapsed
+Initiating NSE at 23:27
+Completed NSE at 23:28, 60.75s elapsed
+Nmap scan report for firewall.wskinner.ninjas (192.168.105.1)
+Host is up (0.0011s latency).
+Not shown: 998 filtered tcp ports (no-response), 998 open|filtered udp ports (no-response)
+PORT    STATE SERVICE VERSION
+53/tcp  open  domain  Unbound 1.23.1
+80/tcp  open  http    OPNsense
+|_http-xssed: No previously reported XSS vuln.
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Set-Cookie: PHPSESSID=313f59aa127cc8591ad9cddcc5aecf70; path=/; HttpOnly; SameSite=Lax
+|     Set-Cookie: PHPSESSID=313f59aa127cc8591ad9cddcc5aecf70; path=/; HttpOnly
+|     Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|     Cache-Control: no-store, no-cache, must-revalidate
+|     Pragma: no-cache
+|     Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' 'unsafe-eval';
+|     X-Frame-Options: SAMEORIGIN
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Referrer-Policy: same-origin
+|     Content-type: text/html; charset=UTF-8
+|     Content-Length: 1613
+|     Connection: close
+|     Date: Thu, 05 Feb 2026 22:44:43 GMT
+|     Server: OPNsense
+|     &lt;!doctype html&gt;
+|     &lt;html lang="en-US" class="no-js"&gt;
+|     &lt;head&gt;
+|     &lt;meta charset="UTF-8" /&gt;
+|     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+|     &lt;meta name="robots" content="noindex, nofollow" /&gt;
+|   HTTPOptions: 
+|     HTTP/1.0 403 Forbidden
+|     Set-Cookie: PHPSESSID=261a1a72be4f9acdd3681d7b6988d57a; path=/; HttpOnly; SameSite=Lax
+|     Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|     Cache-Control: no-store, no-cache, must-revalidate
+|     Pragma: no-cache
+|     Content-type: text/html; charset=UTF-8
+|     Content-Length: 553
+|     Connection: close
+|     Date: Thu, 05 Feb 2026 22:44:43 GMT
+|     Server: OPNsense
+|     &lt;html&gt;&lt;head&gt;&lt;title&gt;CSRF check failed&lt;/title&gt;
+|     &lt;script&gt;
+|     document ).ready(function() {
+|     $.ajaxSetup({
+|     'beforeSend': function(xhr) {
+|     xhr.setRequestHeader("X-CSRFToken", "hJ8beAWAcBFjQ1SxOpODNQ" );
+|     &lt;/script&gt;
+|     &lt;/head&gt;
+|     &lt;body&gt;
+|_    &lt;p&gt;CSRF check failed. Your form session may have expired, or you may not have cookies enabled.&lt;/p&gt;
+|_http-date: Fri, 06 Feb 2026 03:31:16 GMT; +1s from local time.
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: 18C7C53E5C7DF0EA7A891BF9D99A610C
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-traceroute: 
+|_  Possible reverse proxy detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=firewall.wskinner.ninjas
+|     
+|     Path: http://firewall.wskinner.ninjas:80/ui/js/theme.js?v=3a5235221e319be3
+|     Line number: 1
+|     Comment: 
+|         /* Empty placeholder for theme javascript override */
+|     
+|     Path: http://firewall.wskinner.ninjas:80/ui/js/jquery-3.5.1.min.js
+|     Line number: 1
+|     Comment: 
+|_        /*! jQuery v3.5.1 | (c) JS Foundation and other contributors | jquery.org/license */
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-headers: 
+|   Set-Cookie: PHPSESSID=89f63c8a9b4f07e40a78d5e9e344dd24; path=/; HttpOnly; SameSite=Lax
+|   Set-Cookie: PHPSESSID=89f63c8a9b4f07e40a78d5e9e344dd24; path=/; HttpOnly
+|   Set-Cookie: cookie_test=3e38a6fcbe6a6dc7e25b6d95b974ab9e; expires=Fri, 06 Feb 2026 05:26:55 GMT; Max-Age=3600; path=/; HttpOnly
+|   Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|   Cache-Control: no-store, no-cache, must-revalidate
+|   Pragma: no-cache
+|   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' 'unsafe-eval';
+|   X-Frame-Options: SAMEORIGIN
+|   X-Content-Type-Options: nosniff
+|   X-XSS-Protection: 1; mode=block
+|   Referrer-Policy: same-origin
+|   Content-type: text/html; charset=UTF-8
+|   Accept-Ranges: bytes
+|   Content-Length: 2801
+|   Connection: close
+|   Date: Fri, 06 Feb 2026 04:26:55 GMT
+|   Server: OPNsense
+|   
+|_  (Request type: GET)
+| http-security-headers: 
+|   Cache_Control: 
+|     Header: Cache-Control: no-store, no-cache, must-revalidate
+|   Pragma: 
+|     Header: Pragma: no-cache
+|   Expires: 
+|_    Header: Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|_http-title: Login | OPNsense
+|_http-mobileversion-checker: No mobile version detected.
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=firewall.wskinner.ninjas
+|   url                                        method
+|   http://firewall.wskinner.ninjas:80/        FORM
+|_  http://firewall.wskinner.ninjas:80/ui/js/  FORM
+|_http-server-header: OPNsense
+53/udp  open  domain  Unbound 1.23.1
+|_dns-recursion: Recursion appears to be enabled
+| dns-nsid: 
+|   id.server: firewall.wskinner.ninjas
+|_  bind.version: unbound 1.23.1
+123/udp open  ntp     NTP v4 (secondary server)
+| ntp-info: 
+|_  receive time stamp: 2026-02-06T02:28:05
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.98%I=7%D=2/5%Time=69851D5B%P=i686-pc-windows-windows%r(G
+SF:etRequest,904,"HTTP/1\.0\x20200\x20OK\r\nSet-Cookie:\x20PHPSESSID=313f5
+SF:9aa127cc8591ad9cddcc5aecf70;\x20path=/;\x20HttpOnly;\x20SameSite=Lax\r\
+SF:nSet-Cookie:\x20PHPSESSID=313f59aa127cc8591ad9cddcc5aecf70;\x20path=/;\
+SF:x20HttpOnly\r\nExpires:\x20Thu,\x2019\x20Nov\x201981\x2008:52:00\x20GMT
+SF:\r\nCache-Control:\x20no-store,\x20no-cache,\x20must-revalidate\r\nPrag
+SF:ma:\x20no-cache\r\nContent-Security-Policy:\x20default-src\x20'self';\x
+SF:20script-src\x20'self'\x20'unsafe-inline'\x20'unsafe-eval';\x20style-sr
+SF:c\x20'self'\x20'unsafe-inline'\x20'unsafe-eval';\r\nX-Frame-Options:\x2
+SF:0SAMEORIGIN\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\
+SF:x201;\x20mode=block\r\nReferrer-Policy:\x20same-origin\r\nContent-type:
+SF:\x20text/html;\x20charset=UTF-8\r\nContent-Length:\x201613\r\nConnectio
+SF:n:\x20close\r\nDate:\x20Thu,\x2005\x20Feb\x202026\x2022:44:43\x20GMT\r\
+SF:nServer:\x20OPNsense\r\n\r\n&lt;!doctype\x20html&gt;\n&lt;html\x20lang=\"en-US\"
+SF:\x20class=\"no-js\"&gt;\n\x20\x20&lt;head&gt;\n\n\x20\x20\x20\x20&lt;meta\x20charse
+SF:t=\"UTF-8\"\x20/&gt;\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\"X-UA-Compatibl
+SF:e\"\x20content=\"IE=edge\"&gt;\n\n\x20\x20\x20\x20&lt;meta\x20name=\"robots\"
+SF:\x20content=\"noindex,\x20nofollow\"\x20/&gt;\n\x20\x20")%r(HTTPOptions,39
+SF:0,"HTTP/1\.0\x20403\x20Forbidden\r\nSet-Cookie:\x20PHPSESSID=261a1a72be
+SF:4f9acdd3681d7b6988d57a;\x20path=/;\x20HttpOnly;\x20SameSite=Lax\r\nExpi
+SF:res:\x20Thu,\x2019\x20Nov\x201981\x2008:52:00\x20GMT\r\nCache-Control:\
+SF:x20no-store,\x20no-cache,\x20must-revalidate\r\nPragma:\x20no-cache\r\n
+SF:Content-type:\x20text/html;\x20charset=UTF-8\r\nContent-Length:\x20553\
+SF:r\nConnection:\x20close\r\nDate:\x20Thu,\x2005\x20Feb\x202026\x2022:44:
+SF:43\x20GMT\r\nServer:\x20OPNsense\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;CSRF\x20chec
+SF:k\x20failed&lt;/title&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20&lt;s
+SF:cript&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\(\x2
+SF:0document\x20\)\.ready\(function\(\)\x20{\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\$\.ajaxSetup\({\n\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'beforeS
+SF:end':\x20function\(xhr\)\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20xhr\.setRequestHeader\(
+SF:\"X-CSRFToken\",\x20\"hJ8beAWAcBFjQ1SxOpODNQ\"\x20\);\n\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\);\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\);\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20&lt;/script&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20&lt;/head&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20&lt;body&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20&lt;p&gt;CSRF\x20check\x20failed\.\x20Your\x
+SF:20form\x20session\x20may\x20have\x20expired,\x20or\x20you\x20may\x20not
+SF:\x20have\x20cookies\x20enabled\.&lt;/p&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20&lt;/");
+MAC Address: 00:15:5D:68:0A:04 (Microsoft)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): FreeBSD 11.X (97%)
+OS CPE: cpe:/o:freebsd:freebsd:11.2
+Aggressive OS guesses: FreeBSD 11.2-RELEASE (97%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.168 days (since Thu Feb  5 19:26:19 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Host script results:
+|_ipidseq: All zeros
+|_path-mtu: PMTU == 1500
+| fcrdns: 
+|   firewall.wskinner.ninjas: 
+|     status: pass
+|     addresses: 
+|_      192.168.105.1
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV     LOSS (%)
+| 53    0       15800.00   22792.79   0.0%
+| 53    1       192300.00  279629.54  0.0%
+| 80    1       147800.00  132617.91  0.0%
+|_123   0       0.00       -0.00      100.0%
+| firewalk: 
+| HOP  HOST            PROTOCOL  BLOCKED PORTS
+| 0    192.168.105.15  udp       2-3,7,9,13,17,19-22
+|_                     tcp       1,3-4,6-7,9,13,17,19-20
+| traceroute-geolocation: 
+|   HOP  RTT   ADDRESS                                   GEOLOCATION
+|_  1    1.10  firewall.wskinner.ninjas (192.168.105.1)  - ,- 
+|_clock-skew: mean: 1s, deviation: 0s, median: 0s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.10 ms firewall.wskinner.ninjas (192.168.105.1)
+
+Nmap scan report for 192.168.105.2
+Host is up (0.27s latency).
+All 2000 scanned ports on 192.168.105.2 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response), 1000 open|filtered udp ports (no-response)
+MAC Address: 00:15:5D:68:0A:0E (Microsoft)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Host script results:
+| firewalk: 
+| HOP  HOST            PROTOCOL  BLOCKED PORTS
+| 0    192.168.105.15  udp       2-3,7,9,13,17,19-22
+|_                     tcp       1,3-4,6-7,9,13,17,19-20
+| traceroute-geolocation: 
+|   HOP  RTT     ADDRESS        GEOLOCATION
+|_  1    266.00  192.168.105.2  - ,- 
+|_fcrdns: FAIL (No PTR record)
+
+TRACEROUTE
+HOP RTT       ADDRESS
+1   266.00 ms 192.168.105.2
+
+Nmap scan report for Domain.wskinner.ninjas (192.168.105.10)
+Host is up (0.0011s latency).
+Not shown: 995 open|filtered udp ports (no-response), 988 filtered tcp ports (no-response)
+Bug in http-security-headers: no string output.
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   DNS-SD-TCP: 
+|     _services
+|     _dns-sd
+|     _udp
+|_    local
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-02-06 00:34:27Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: wskinner.ninjas, Site: Default-First-Site-Name)
+| ldap-rootdse: 
+| LDAP Results
+|   &lt;ROOT&gt;
+|       domainFunctionality: 10
+|       forestFunctionality: 10
+|       domainControllerFunctionality: 10
+|       rootDomainNamingContext: DC=wskinner,DC=ninjas
+|       ldapServiceName: wskinner.ninjas:domain$@WSKINNER.NINJAS
+|       isGlobalCatalogReady: TRUE
+|       supportedSASLMechanisms: GSSAPI
+|       supportedSASLMechanisms: GSS-SPNEGO
+|       supportedSASLMechanisms: EXTERNAL
+|       supportedSASLMechanisms: DIGEST-MD5
+|       supportedLDAPVersion: 3
+|       supportedLDAPVersion: 2
+|       supportedLDAPPolicies: MaxPoolThreads
+|       supportedLDAPPolicies: MaxPercentDirSyncRequests
+|       supportedLDAPPolicies: MaxDatagramRecv
+|       supportedLDAPPolicies: MaxReceiveBuffer
+|       supportedLDAPPolicies: MaxPreAuthReceiveBuffer
+|       supportedLDAPPolicies: InitRecvTimeout
+|       supportedLDAPPolicies: MaxConnections
+|       supportedLDAPPolicies: MaxConnIdleTime
+|       supportedLDAPPolicies: MaxPageSize
+|       supportedLDAPPolicies: MaxBatchReturnMessages
+|       supportedLDAPPolicies: MaxQueryDuration
+|       supportedLDAPPolicies: MaxDirSyncDuration
+|       supportedLDAPPolicies: MaxTempTableSize
+|       supportedLDAPPolicies: MaxResultSetSize
+|       supportedLDAPPolicies: MinResultSets
+|       supportedLDAPPolicies: MaxResultSetsPerConn
+|       supportedLDAPPolicies: MaxNotificationPerConn
+|       supportedLDAPPolicies: MaxValRange
+|       supportedLDAPPolicies: MaxValRangeTransitive
+|       supportedLDAPPolicies: ThreadMemoryLimit
+|       supportedLDAPPolicies: SystemMemoryLimitPercent
+|       supportedLDAPPolicies: SecurityDescriptorWarningSize
+|       supportedControl: 1.2.840.113556.1.4.319
+|       supportedControl: 1.2.840.113556.1.4.801
+|       supportedControl: 1.2.840.113556.1.4.473
+|       supportedControl: 1.2.840.113556.1.4.528
+|       supportedControl: 1.2.840.113556.1.4.417
+|       supportedControl: 1.2.840.113556.1.4.619
+|       supportedControl: 1.2.840.113556.1.4.841
+|       supportedControl: 1.2.840.113556.1.4.529
+|       supportedControl: 1.2.840.113556.1.4.805
+|       supportedControl: 1.2.840.113556.1.4.521
+|       supportedControl: 1.2.840.113556.1.4.970
+|       supportedControl: 1.2.840.113556.1.4.1338
+|       supportedControl: 1.2.840.113556.1.4.474
+|       supportedControl: 1.2.840.113556.1.4.1339
+|       supportedControl: 1.2.840.113556.1.4.1340
+|       supportedControl: 1.2.840.113556.1.4.1413
+|       supportedControl: 2.16.840.1.113730.3.4.9
+|       supportedControl: 2.16.840.1.113730.3.4.10
+|       supportedControl: 1.2.840.113556.1.4.1504
+|       supportedControl: 1.2.840.113556.1.4.1852
+|       supportedControl: 1.2.840.113556.1.4.802
+|       supportedControl: 1.2.840.113556.1.4.1907
+|       supportedControl: 1.2.840.113556.1.4.1948
+|       supportedControl: 1.2.840.113556.1.4.1974
+|       supportedControl: 1.2.840.113556.1.4.1341
+|       supportedControl: 1.2.840.113556.1.4.2026
+|       supportedControl: 1.2.840.113556.1.4.2064
+|       supportedControl: 1.2.840.113556.1.4.2065
+|       supportedControl: 1.2.840.113556.1.4.2066
+|       supportedControl: 1.2.840.113556.1.4.2090
+|       supportedControl: 1.2.840.113556.1.4.2205
+|       supportedControl: 1.2.840.113556.1.4.2204
+|       supportedControl: 1.2.840.113556.1.4.2206
+|       supportedControl: 1.2.840.113556.1.4.2211
+|       supportedControl: 1.2.840.113556.1.4.2239
+|       supportedControl: 1.2.840.113556.1.4.2255
+|       supportedControl: 1.2.840.113556.1.4.2256
+|       supportedControl: 1.2.840.113556.1.4.2309
+|       supportedControl: 1.2.840.113556.1.4.2330
+|       supportedControl: 1.2.840.113556.1.4.2354
+|       supportedCapabilities: 1.2.840.113556.1.4.800
+|       supportedCapabilities: 1.2.840.113556.1.4.1670
+|       supportedCapabilities: 1.2.840.113556.1.4.1791
+|       supportedCapabilities: 1.2.840.113556.1.4.1935
+|       supportedCapabilities: 1.2.840.113556.1.4.2080
+|       supportedCapabilities: 1.2.840.113556.1.4.2237
+|       subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       serverName: CN=DOMAIN,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wskinner,DC=ninjas
+|       schemaNamingContext: CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: DC=wskinner,DC=ninjas
+|       namingContexts: CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: DC=DomainDnsZones,DC=wskinner,DC=ninjas
+|       namingContexts: DC=ForestDnsZones,DC=wskinner,DC=ninjas
+|       isSynchronized: TRUE
+|       highestCommittedUSN: 22341
+|       dsServiceName: CN=NTDS Settings,CN=DOMAIN,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wskinner,DC=ninjas
+|       dnsHostName: Domain.wskinner.ninjas
+|       defaultNamingContext: DC=wskinner,DC=ninjas
+|       currentTime: 20260206041918.0Z
+|_      configurationNamingContext: CN=Configuration,DC=wskinner,DC=ninjas
+445/tcp  open  microsoft-ds?
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+|_banner: ncacn_http/1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: wskinner.ninjas, Site: Default-First-Site-Name)
+| ldap-rootdse: 
+| LDAP Results
+|   &lt;ROOT&gt;
+|       domainFunctionality: 10
+|       forestFunctionality: 10
+|       domainControllerFunctionality: 10
+|       rootDomainNamingContext: DC=wskinner,DC=ninjas
+|       ldapServiceName: wskinner.ninjas:domain$@WSKINNER.NINJAS
+|       isGlobalCatalogReady: TRUE
+|       supportedSASLMechanisms: GSSAPI
+|       supportedSASLMechanisms: GSS-SPNEGO
+|       supportedSASLMechanisms: EXTERNAL
+|       supportedSASLMechanisms: DIGEST-MD5
+|       supportedLDAPVersion: 3
+|       supportedLDAPVersion: 2
+|       supportedLDAPPolicies: MaxPoolThreads
+|       supportedLDAPPolicies: MaxPercentDirSyncRequests
+|       supportedLDAPPolicies: MaxDatagramRecv
+|       supportedLDAPPolicies: MaxReceiveBuffer
+|       supportedLDAPPolicies: MaxPreAuthReceiveBuffer
+|       supportedLDAPPolicies: InitRecvTimeout
+|       supportedLDAPPolicies: MaxConnections
+|       supportedLDAPPolicies: MaxConnIdleTime
+|       supportedLDAPPolicies: MaxPageSize
+|       supportedLDAPPolicies: MaxBatchReturnMessages
+|       supportedLDAPPolicies: MaxQueryDuration
+|       supportedLDAPPolicies: MaxDirSyncDuration
+|       supportedLDAPPolicies: MaxTempTableSize
+|       supportedLDAPPolicies: MaxResultSetSize
+|       supportedLDAPPolicies: MinResultSets
+|       supportedLDAPPolicies: MaxResultSetsPerConn
+|       supportedLDAPPolicies: MaxNotificationPerConn
+|       supportedLDAPPolicies: MaxValRange
+|       supportedLDAPPolicies: MaxValRangeTransitive
+|       supportedLDAPPolicies: ThreadMemoryLimit
+|       supportedLDAPPolicies: SystemMemoryLimitPercent
+|       supportedLDAPPolicies: SecurityDescriptorWarningSize
+|       supportedControl: 1.2.840.113556.1.4.319
+|       supportedControl: 1.2.840.113556.1.4.801
+|       supportedControl: 1.2.840.113556.1.4.473
+|       supportedControl: 1.2.840.113556.1.4.528
+|       supportedControl: 1.2.840.113556.1.4.417
+|       supportedControl: 1.2.840.113556.1.4.619
+|       supportedControl: 1.2.840.113556.1.4.841
+|       supportedControl: 1.2.840.113556.1.4.529
+|       supportedControl: 1.2.840.113556.1.4.805
+|       supportedControl: 1.2.840.113556.1.4.521
+|       supportedControl: 1.2.840.113556.1.4.970
+|       supportedControl: 1.2.840.113556.1.4.1338
+|       supportedControl: 1.2.840.113556.1.4.474
+|       supportedControl: 1.2.840.113556.1.4.1339
+|       supportedControl: 1.2.840.113556.1.4.1340
+|       supportedControl: 1.2.840.113556.1.4.1413
+|       supportedControl: 2.16.840.1.113730.3.4.9
+|       supportedControl: 2.16.840.1.113730.3.4.10
+|       supportedControl: 1.2.840.113556.1.4.1504
+|       supportedControl: 1.2.840.113556.1.4.1852
+|       supportedControl: 1.2.840.113556.1.4.802
+|       supportedControl: 1.2.840.113556.1.4.1907
+|       supportedControl: 1.2.840.113556.1.4.1948
+|       supportedControl: 1.2.840.113556.1.4.1974
+|       supportedControl: 1.2.840.113556.1.4.1341
+|       supportedControl: 1.2.840.113556.1.4.2026
+|       supportedControl: 1.2.840.113556.1.4.2064
+|       supportedControl: 1.2.840.113556.1.4.2065
+|       supportedControl: 1.2.840.113556.1.4.2066
+|       supportedControl: 1.2.840.113556.1.4.2090
+|       supportedControl: 1.2.840.113556.1.4.2205
+|       supportedControl: 1.2.840.113556.1.4.2204
+|       supportedControl: 1.2.840.113556.1.4.2206
+|       supportedControl: 1.2.840.113556.1.4.2211
+|       supportedControl: 1.2.840.113556.1.4.2239
+|       supportedControl: 1.2.840.113556.1.4.2255
+|       supportedControl: 1.2.840.113556.1.4.2256
+|       supportedControl: 1.2.840.113556.1.4.2309
+|       supportedControl: 1.2.840.113556.1.4.2330
+|       supportedControl: 1.2.840.113556.1.4.2354
+|       supportedCapabilities: 1.2.840.113556.1.4.800
+|       supportedCapabilities: 1.2.840.113556.1.4.1670
+|       supportedCapabilities: 1.2.840.113556.1.4.1791
+|       supportedCapabilities: 1.2.840.113556.1.4.1935
+|       supportedCapabilities: 1.2.840.113556.1.4.2080
+|       supportedCapabilities: 1.2.840.113556.1.4.2237
+|       subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       serverName: CN=DOMAIN,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wskinner,DC=ninjas
+|       schemaNamingContext: CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: DC=wskinner,DC=ninjas
+|       namingContexts: CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: DC=DomainDnsZones,DC=wskinner,DC=ninjas
+|       namingContexts: DC=ForestDnsZones,DC=wskinner,DC=ninjas
+|       isSynchronized: TRUE
+|       highestCommittedUSN: 22341
+|       dsServiceName: CN=NTDS Settings,CN=DOMAIN,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wskinner,DC=ninjas
+|       dnsHostName: Domain.wskinner.ninjas
+|       defaultNamingContext: DC=wskinner,DC=ninjas
+|       currentTime: 20260206042040.0Z
+|_      configurationNamingContext: CN=Configuration,DC=wskinner,DC=ninjas
+3269/tcp open  tcpwrapped
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-traceroute: 
+|_  Possible reverse proxy detected.
+|_http-xssed: No previously reported XSS vuln.
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-comments-displayer: Couldn't find any comments.
+|_http-title: Not Found
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-headers: 
+|   Content-Type: text/html; charset=us-ascii
+|   Server: Microsoft-HTTPAPI/2.0
+|   Date: Fri, 06 Feb 2026 04:18:08 GMT
+|   Connection: close
+|   Content-Length: 315
+|   
+|_  (Request type: GET)
+| http-useragent-tester: 
+|   Status for browser useragent: 404
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-date: Fri, 06 Feb 2026 04:18:07 GMT; 0s from local time.
+|_http-mobileversion-checker: No mobile version detected.
+53/udp   open  domain        Simple DNS Plus
+|_dns-recursion: Recursion appears to be enabled
+88/udp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-02-06 00:34:29Z)
+123/udp  open  ntp           NTP v3
+| ntp-info: 
+|_  receive time stamp: 2026-02-06T04:08:48
+137/udp  open  netbios-ns    Microsoft Windows netbios-ns (Domain controller: WSKINNER)
+| nbns-interfaces: 
+|   hostname: DOMAIN
+|   interfaces: 
+|_    192.168.105.10
+389/udp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: wskinner.ninjas, Site: Default-First-Site-Name)
+| ldap-rootdse: 
+| LDAP Results
+|   &lt;ROOT&gt;
+|       domainFunctionality: 10
+|       forestFunctionality: 10
+|       domainControllerFunctionality: 10
+|       rootDomainNamingContext: DC=wskinner,DC=ninjas
+|       ldapServiceName: wskinner.ninjas:domain$@WSKINNER.NINJAS
+|       isGlobalCatalogReady: TRUE
+|       supportedSASLMechanisms: GSSAPI
+|       supportedSASLMechanisms: GSS-SPNEGO
+|       supportedSASLMechanisms: EXTERNAL
+|       supportedSASLMechanisms: DIGEST-MD5
+|       supportedLDAPVersion: 3
+|       supportedLDAPVersion: 2
+|       supportedLDAPPolicies: MaxPoolThreads
+|       supportedLDAPPolicies: MaxPercentDirSyncRequests
+|       supportedLDAPPolicies: MaxDatagramRecv
+|       supportedLDAPPolicies: MaxReceiveBuffer
+|       supportedLDAPPolicies: MaxPreAuthReceiveBuffer
+|       supportedLDAPPolicies: InitRecvTimeout
+|       supportedLDAPPolicies: MaxConnections
+|       supportedLDAPPolicies: MaxConnIdleTime
+|       supportedLDAPPolicies: MaxPageSize
+|       supportedLDAPPolicies: MaxBatchReturnMessages
+|       supportedLDAPPolicies: MaxQueryDuration
+|       supportedLDAPPolicies: MaxDirSyncDuration
+|       supportedLDAPPolicies: MaxTempTableSize
+|       supportedLDAPPolicies: MaxResultSetSize
+|       supportedLDAPPolicies: MinResultSets
+|       supportedLDAPPolicies: MaxResultSetsPerConn
+|       supportedLDAPPolicies: MaxNotificationPerConn
+|       supportedLDAPPolicies: MaxValRange
+|       supportedLDAPPolicies: MaxValRangeTransitive
+|       supportedLDAPPolicies: ThreadMemoryLimit
+|       supportedLDAPPolicies: SystemMemoryLimitPercent
+|       supportedLDAPPolicies: SecurityDescriptorWarningSize
+|       supportedControl: 1.2.840.113556.1.4.319
+|       supportedControl: 1.2.840.113556.1.4.801
+|       supportedControl: 1.2.840.113556.1.4.473
+|       supportedControl: 1.2.840.113556.1.4.528
+|       supportedControl: 1.2.840.113556.1.4.417
+|       supportedControl: 1.2.840.113556.1.4.619
+|       supportedControl: 1.2.840.113556.1.4.841
+|       supportedControl: 1.2.840.113556.1.4.529
+|       supportedControl: 1.2.840.113556.1.4.805
+|       supportedControl: 1.2.840.113556.1.4.521
+|       supportedControl: 1.2.840.113556.1.4.970
+|       supportedControl: 1.2.840.113556.1.4.1338
+|       supportedControl: 1.2.840.113556.1.4.474
+|       supportedControl: 1.2.840.113556.1.4.1339
+|       supportedControl: 1.2.840.113556.1.4.1340
+|       supportedControl: 1.2.840.113556.1.4.1413
+|       supportedControl: 2.16.840.1.113730.3.4.9
+|       supportedControl: 2.16.840.1.113730.3.4.10
+|       supportedControl: 1.2.840.113556.1.4.1504
+|       supportedControl: 1.2.840.113556.1.4.1852
+|       supportedControl: 1.2.840.113556.1.4.802
+|       supportedControl: 1.2.840.113556.1.4.1907
+|       supportedControl: 1.2.840.113556.1.4.1948
+|       supportedControl: 1.2.840.113556.1.4.1974
+|       supportedControl: 1.2.840.113556.1.4.1341
+|       supportedControl: 1.2.840.113556.1.4.2026
+|       supportedControl: 1.2.840.113556.1.4.2064
+|       supportedControl: 1.2.840.113556.1.4.2065
+|       supportedControl: 1.2.840.113556.1.4.2066
+|       supportedControl: 1.2.840.113556.1.4.2090
+|       supportedControl: 1.2.840.113556.1.4.2205
+|       supportedControl: 1.2.840.113556.1.4.2204
+|       supportedControl: 1.2.840.113556.1.4.2206
+|       supportedControl: 1.2.840.113556.1.4.2211
+|       supportedControl: 1.2.840.113556.1.4.2239
+|       supportedControl: 1.2.840.113556.1.4.2255
+|       supportedControl: 1.2.840.113556.1.4.2256
+|       supportedControl: 1.2.840.113556.1.4.2309
+|       supportedControl: 1.2.840.113556.1.4.2330
+|       supportedControl: 1.2.840.113556.1.4.2354
+|       supportedCapabilities: 1.2.840.113556.1.4.800
+|       supportedCapabilities: 1.2.840.113556.1.4.1670
+|       supportedCapabilities: 1.2.840.113556.1.4.1791
+|       supportedCapabilities: 1.2.840.113556.1.4.1935
+|       supportedCapabilities: 1.2.840.113556.1.4.2080
+|       supportedCapabilities: 1.2.840.113556.1.4.2237
+|       subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       serverName: CN=DOMAIN,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wskinner,DC=ninjas
+|       schemaNamingContext: CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: DC=wskinner,DC=ninjas
+|       namingContexts: CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: CN=Schema,CN=Configuration,DC=wskinner,DC=ninjas
+|       namingContexts: DC=DomainDnsZones,DC=wskinner,DC=ninjas
+|       namingContexts: DC=ForestDnsZones,DC=wskinner,DC=ninjas
+|       isSynchronized: TRUE
+|       highestCommittedUSN: 22339
+|       dsServiceName: CN=NTDS Settings,CN=DOMAIN,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wskinner,DC=ninjas
+|       dnsHostName: Domain.wskinner.ninjas
+|       defaultNamingContext: DC=wskinner,DC=ninjas
+|       currentTime: 20260206035816.0Z
+|_      configurationNamingContext: CN=Configuration,DC=wskinner,DC=ninjas
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.98%I=7%D=2/5%Time=69853720%P=i686-pc-windows-windows%r(D
+SF:NS-SD-TCP,30,"\0\.\0\0\x80\x82\0\x01\0\0\0\0\0\0\t_services\x07_dns-sd\
+SF:x04_udp\x05local\0\0\x0c\0\x01");
+MAC Address: 00:15:5D:68:0A:01 (Microsoft)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2022|2016|11 (96%)
+OS CPE: cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_11
+Aggressive OS guesses: Microsoft Windows Server 2022 (96%), Microsoft Windows Server 2016 (91%), Microsoft Windows 11 21H2 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 10.367 days (since Mon Jan 26 14:40:50 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: DOMAIN; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: NetBIOS name: DOMAIN, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:15:5d:68:0a:01 (Microsoft)
+| Names:
+|   DOMAIN&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;
+|   WSKINNER&lt;00&gt;         Flags: &lt;group&gt;&lt;active&gt;
+|   WSKINNER&lt;1c&gt;         Flags: &lt;group&gt;&lt;active&gt;
+|   DOMAIN&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;
+|_  WSKINNER&lt;1b&gt;         Flags: &lt;unique&gt;&lt;active&gt;
+|_ipidseq: Incremental!
+| fcrdns: 
+|   Domain.wskinner.ninjas: 
+|     status: pass
+|     addresses: 
+|_      192.168.105.10
+| firewalk: 
+| HOP  HOST            PROTOCOL  BLOCKED PORTS
+| 0    192.168.105.15  udp       2-3,7,9,13,17,19-22
+|_                     tcp       1,3-4,6-7,9,13,17,19-20
+|_path-mtu: PMTU == 1500
+| smb-mbenum: 
+|_  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb2-time: 
+|   date: 2026-02-06T03:39:21
+|_  start_date: N/A
+| smb2-capabilities: 
+|   2.0.2: 
+|     Distributed File System
+|   2.1: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0.2: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.1.1: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+| traceroute-geolocation: 
+|   HOP  RTT   ADDRESS                                  GEOLOCATION
+|_  1    1.11  Domain.wskinner.ninjas (192.168.105.10)  - ,- 
+| smb-protocols: 
+|   dialects: 
+|     2.0.2
+|     2.1
+|     3.0
+|     3.0.2
+|_    3.1.1
+|_msrpc-enum: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV     LOSS (%)
+| 53    0       212100.00  113563.93  0.0%
+| 88    0       262400.00  166513.40  0.0%
+| 135   0       434500.00  516556.60  0.0%
+| 139   0       436900.00  600811.20  0.0%
+| 389   0       302100.00  181180.36  0.0%
+| 445   0       268400.00  196637.40  0.0%
+| 464   0       226800.00  144442.07  0.0%
+|_593   0       212400.00  103921.12  0.0%
+|_clock-skew: mean: 2s, deviation: 4s, median: 0s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.11 ms Domain.wskinner.ninjas (192.168.105.10)
+
+Nmap scan report for website.wskinner.ninjas (192.168.105.20)
+Host is up (0.00098s latency).
+Not shown: 1000 closed udp ports (port-unreach), 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.14
+| ssh-hostkey: 
+|   256 ea:9d:fc:5f:8c:62:a8:64:2b:2d:5f:ef:90:d0:75:c7 (ECDSA)
+|_  256 45:28:9c:73:fb:90:9d:61:4d:ca:81:57:b5:2b:7c:7e (ED25519)
+| ssh2-enum-algos: 
+|   kex_algorithms: (12)
+|       sntrup761x25519-sha512@openssh.com
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group18-sha512
+|       diffie-hellman-group14-sha256
+|       ext-info-s
+|       kex-strict-s-v00@openssh.com
+|   server_host_key_algorithms: (4)
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (6)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+MAC Address: 00:15:5D:68:0A:10 (Microsoft)
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:mikrotik:routeros:7 cpe:/o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Uptime guess: 33.118 days (since Sat Jan  3 20:38:40 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV     LOSS (%)
+| 1     0       352900.00  400886.37  0.0%
+|_22    0       343700.00  558970.89  0.0%
+|_path-mtu: PMTU == 1500
+| traceroute-geolocation: 
+|   HOP  RTT   ADDRESS                                   GEOLOCATION
+|_  1    0.98  website.wskinner.ninjas (192.168.105.20)  - ,- 
+|_ipidseq: All zeros
+| fcrdns: 
+|   website.wskinner.ninjas: 
+|     status: pass
+|     addresses: 
+|_      192.168.105.20
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.98 ms website.wskinner.ninjas (192.168.105.20)
+
+Nmap scan report for Workstation_1.wskinner.ninjas (192.168.105.100)
+Host is up (0.00099s latency).
+Not shown: 1000 open|filtered udp ports (no-response), 999 filtered tcp ports (no-response)
+PORT    STATE SERVICE VERSION
+135/tcp open  msrpc   Microsoft Windows RPC
+MAC Address: 00:15:5D:68:0A:0A (Microsoft)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 11|2022|10 (91%), FreeBSD 6.X (86%)
+OS CPE: cpe:/o:microsoft:windows_11 cpe:/o:freebsd:freebsd:6.2 cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_10
+Aggressive OS guesses: Microsoft Windows 11 21H2 (91%), FreeBSD 6.2-RELEASE (86%), Microsoft Windows Server 2022 (85%), Microsoft Windows 10 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 10.278 days (since Mon Jan 26 16:48:18 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_path-mtu: PMTU == 1500
+| traceroute-geolocation: 
+|   HOP  RTT   ADDRESS                                          GEOLOCATION
+|_  1    0.99  Workstation_1.wskinner.ninjas (192.168.105.100)  - ,- 
+|_ipidseq: Incremental!
+| firewalk: 
+| HOP  HOST            PROTOCOL  BLOCKED PORTS
+| 0    192.168.105.15  udp       2-3,7,9,13,17,19-22
+|_                     tcp       1,3-4,6-7,9,13,17,19-20
+| fcrdns: 
+|   Workstation_1.wskinner.ninjas: 
+|     status: pass
+|     addresses: 
+|_      192.168.105.100
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.99 ms Workstation_1.wskinner.ninjas (192.168.105.100)
+
+Initiating SYN Stealth Scan at 23:28
+Scanning 192.168.105.15 [1000 ports]
+Discovered open port 135/tcp on 192.168.105.15
+Discovered open port 445/tcp on 192.168.105.15
+Discovered open port 139/tcp on 192.168.105.15
+Discovered open port 5357/tcp on 192.168.105.15
+Completed SYN Stealth Scan at 23:28, 0.29s elapsed (1000 total ports)
+Initiating UDP Scan at 23:28
+Scanning 192.168.105.15 [1000 ports]
+Completed UDP Scan at 23:28, 7.67s elapsed (1000 total ports)
+Initiating Service scan at 23:28
+Scanning 12 services on 192.168.105.15
+Service scan Timing: About 41.67% done; ETC: 23:32 (0:02:09 remaining)
+Completed Service scan at 23:30, 107.79s elapsed (12 services on 1 host)
+Initiating OS detection (try #1) against 192.168.105.15
+NSE: Script scanning 192.168.105.15.
+Initiating NSE at 23:30
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+Windows does not have adequate raw socket support.
+Completed NSE at 23:31, 67.71s elapsed
+Initiating NSE at 23:31
+Completed NSE at 23:31, 1.04s elapsed
+Initiating NSE at 23:31
+Completed NSE at 23:31, 0.02s elapsed
+Nmap scan report for 192.168.105.15
+Host is up (0.0027s latency).
+Not shown: 996 closed tcp ports (reset), 992 closed udp ports (port-unreach)
+Bug in http-security-headers: no string output.
+PORT     STATE         SERVICE       VERSION
+135/tcp  open          msrpc         Microsoft Windows RPC
+139/tcp  open          netbios-ssn   Microsoft Windows netbios-ssn
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+445/tcp  open          microsoft-ds?
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+5357/tcp open          http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-xssed: No previously reported XSS vuln.
+| http-headers: 
+|   Content-Type: text/html; charset=us-ascii
+|   Server: Microsoft-HTTPAPI/2.0
+|   Date: Fri, 06 Feb 2026 06:30:41 GMT
+|   Connection: close
+|   Content-Length: 326
+|   
+|_  (Request type: GET)
+|_http-date: Fri, 06 Feb 2026 06:30:39 GMT; -1s from local time.
+| http-traceroute: 
+|_  Possible reverse proxy detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-mobileversion-checker: No mobile version detected.
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+| http-useragent-tester: 
+|   Status for browser useragent: 503
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-comments-displayer: Couldn't find any comments.
+137/udp  open|filtered netbios-ns
+138/udp  open|filtered netbios-dgm
+1900/udp open|filtered upnp
+3702/udp open|filtered ws-discovery
+| wsdd-discover: 
+|   Devices
+|     Message id: 03fac929-e626-451d-8874-ad2b7d1a6839
+|     Address: http://192.168.105.15:5357/9ac429a1-eff3-49d0-b5c2-a97ddb41ead3/
+|_    Type: Device pub:Computer
+4500/udp open|filtered nat-t-ike
+5050/udp open|filtered mmcc
+5353/udp open|filtered zeroconf
+5355/udp open|filtered llmnr
+Device type: general purpose
+Running: Microsoft Windows 10
+OS CPE: cpe:/o:microsoft:windows_10
+OS details: Microsoft Windows 10 1809 - 21H2
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_fcrdns: FAIL (No PTR record)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb-protocols: 
+|   dialects: 
+|     2.0.2
+|     2.1
+|     3.0
+|     3.0.2
+|_    3.1.1
+| qscan: 
+| PORT  FAMILY  MEAN (us)   STDDEV       LOSS (%)
+| 1     0       7400.00     1776.39      0.0%
+| 135   0       24900.00    64340.16     0.0%
+| 139   0       213500.00   651254.22    0.0%
+| 445   0       3390200.00  10696158.28  0.0%
+|_5357  0       2119600.00  6680276.49   0.0%
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+|_msrpc-enum: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb2-capabilities: 
+|   2.0.2: 
+|     Distributed File System
+|   2.1: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0.2: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.1.1: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+| smb2-time: 
+|   date: 2026-02-06T06:30:47
+|_  start_date: N/A
+|_ipidseq: Unknown
+| smb-mbenum: 
+|_  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+NSE: Script Post-scanning.
+Initiating NSE at 23:31
+Completed NSE at 23:31, 0.00s elapsed
+Initiating NSE at 23:31
+Completed NSE at 23:31, 0.00s elapsed
+Initiating NSE at 23:31
+Completed NSE at 23:31, 0.00s elapsed
+Post-scan script results:
+| clock-skew: 
+|   1s: 
+|     192.168.105.1 (firewall.wskinner.ninjas)
+|_    192.168.105.10 (Domain.wskinner.ninjas)
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (6 hosts up) scanned in 30791.19 seconds
+           Raw packets sent: 24181 (1.117MB) | Rcvd: 10113 (535.929KB)
+</output><host comment=""><status state="down"></status><address addr="192.168.105.0" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.3" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.4" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.5" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.6" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.7" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.8" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.9" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.11" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.12" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.13" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.14" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.16" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.17" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.18" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.19" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.21" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.22" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.23" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.24" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.25" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.26" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.27" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.28" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.29" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.30" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.31" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.32" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.33" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.34" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.35" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.36" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.37" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.38" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.39" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.40" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.41" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.42" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.43" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.44" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.45" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.46" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.47" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.48" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.49" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.50" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.51" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.52" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.53" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.54" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.55" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.56" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.57" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.58" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.59" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.60" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.61" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.62" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.63" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.64" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.65" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.66" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.67" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.68" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.69" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.70" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.71" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.72" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.73" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.74" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.75" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.76" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.77" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.78" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.79" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.80" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.81" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.82" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.83" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.84" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.85" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.86" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.87" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.88" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.89" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.90" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.91" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.92" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.93" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.94" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.95" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.96" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.97" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.98" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.99" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.101" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.102" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.103" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.104" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.105" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.106" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.107" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.108" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.109" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.110" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.111" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.112" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.113" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.114" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.115" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.116" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.117" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.118" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.119" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.120" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.121" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.122" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.123" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.124" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.125" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.126" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.127" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.128" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.129" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.130" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.131" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.132" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.133" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.134" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.135" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.136" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.137" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.138" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.139" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.140" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.141" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.142" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.143" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.144" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.145" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.146" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.147" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.148" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.149" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.150" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.151" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.152" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.153" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.154" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.155" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.156" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.157" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.158" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.159" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.160" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.161" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.162" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.163" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.164" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.165" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.166" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.167" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.168" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.169" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.170" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.171" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.172" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.173" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.174" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.175" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.176" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.177" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.178" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.179" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.180" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.181" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.182" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.183" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.184" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.185" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.186" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.187" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.188" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.189" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.190" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.191" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.192" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.193" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.194" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.195" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.196" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.197" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.198" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.199" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.200" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.201" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.202" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.203" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.204" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.205" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.206" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.207" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.208" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.209" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.210" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.211" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.212" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.213" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.214" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.215" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.216" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.217" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.218" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.219" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.220" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.221" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.222" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.223" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.224" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.225" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.226" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.227" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.228" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.229" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.230" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.231" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.232" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.233" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.234" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.235" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.236" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.237" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.238" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.239" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.240" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.241" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.242" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.243" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.244" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.245" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.246" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.247" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.248" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.249" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.250" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.251" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.252" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.253" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.254" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="down"></status><address addr="192.168.105.255" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence></host><host comment=""><status state="up"></status><address addr="192.168.105.1" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:04" vendor="Microsoft" addrtype="mac"></address><hostnames><hostname name="firewall.wskinner.ninjas" type="PTR"></hostname></hostnames><ports><extraports count="998" state="filtered"></extraports><extraports count="998" state="open|filtered"></extraports><port portid="53" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="64"></state><service conf="10" method="probed" name="domain" product="Unbound" version="1.23.1"></service></port><port portid="80" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="64"></state><service conf="10" method="probed" name="http" product="OPNsense"></service></port><port portid="53" protocol="udp"><state state="open" reason="udp-response" reason_ttl="64"></state><service conf="10" method="probed" name="domain" product="Unbound" version="1.23.1"></service></port><port portid="123" protocol="udp"><state state="open" reason="udp-response" reason_ttl="64"></state><service conf="10" method="probed" name="ntp" product="NTP" version="v4" extrainfo="secondary server"></service></port></ports><os><portused state="open" proto="tcp" portid="53"></portused><osmatch name="FreeBSD 11.2-RELEASE" accuracy="97" line="28169"><osclass vendor="FreeBSD" osfamily="FreeBSD" type="general purpose" osgen="11.X" accuracy="97"></osclass></osmatch></os><uptime seconds="14543" lastboot="Thu Feb  5 19:26:19 2026"></uptime><tcpsequence index="262" difficulty="Good luck!" values="ACC19A53,363148B1,289A7118,D80FFEC6,D00E1AEE,89019F8B"></tcpsequence><ipidsequence class="All zeros" values="0,0,0,0,0,0"></ipidsequence><tcptssequence class="other" values="7AECD059,30FE8A57,778FEF93,CB2E112A,935AA530,801B6B2C"></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="1.10" ipaddr="192.168.105.1" host="firewall.wskinner.ninjas"></hop></trace></host><host comment=""><status state="up"></status><address addr="192.168.105.2" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:0E" vendor="Microsoft" addrtype="mac"></address><hostnames></hostnames><ports><extraports count="1000" state="filtered"></extraports><extraports count="1000" state="open|filtered"></extraports></ports><os></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="" difficulty="" values=""></tcpsequence><ipidsequence class="" values=""></ipidsequence><tcptssequence class="" values=""></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="266.00" ipaddr="192.168.105.2" host=""></hop></trace></host><host comment=""><status state="up"></status><address addr="192.168.105.10" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:01" vendor="Microsoft" addrtype="mac"></address><hostnames><hostname name="Domain.wskinner.ninjas" type="PTR"></hostname></hostnames><ports><extraports count="995" state="open|filtered"></extraports><extraports count="988" state="filtered"></extraports><port portid="53" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="domain" extrainfo="generic dns response: SERVFAIL"></service></port><port portid="88" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-02-06 00:34:27Z"></service></port><port portid="135" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="139" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="netbios-ssn" product="Microsoft Windows netbios-ssn"></service></port><port portid="389" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: wskinner.ninjas, Site: Default-First-Site-Name"></service></port><port portid="445" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="microsoft-ds"></service></port><port portid="464" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="kpasswd5"></service></port><port portid="593" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0"></service></port><port portid="636" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="8" method="probed" name="tcpwrapped"></service></port><port portid="3268" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: wskinner.ninjas, Site: Default-First-Site-Name"></service></port><port portid="3269" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="8" method="probed" name="tcpwrapped"></service></port><port portid="5985" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP"></service></port><port portid="53" protocol="udp"><state state="open" reason="udp-response" reason_ttl="128"></state><service conf="10" method="probed" name="domain" product="Simple DNS Plus"></service></port><port portid="88" protocol="udp"><state state="open" reason="udp-response" reason_ttl="128"></state><service conf="10" method="probed" name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-02-06 00:34:29Z"></service></port><port portid="123" protocol="udp"><state state="open" reason="udp-response" reason_ttl="128"></state><service conf="10" method="probed" name="ntp" product="NTP" version="v3"></service></port><port portid="137" protocol="udp"><state state="open" reason="udp-response" reason_ttl="128"></state><service conf="10" method="probed" name="netbios-ns" product="Microsoft Windows netbios-ns" extrainfo="Domain controller: WSKINNER"></service></port><port portid="389" protocol="udp"><state state="open" reason="udp-response" reason_ttl="128"></state><service conf="10" method="probed" name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: wskinner.ninjas, Site: Default-First-Site-Name"></service></port></ports><os><portused state="open" proto="tcp" portid="53"></portused><osmatch name="Microsoft Windows Server 2022" accuracy="96" line="82075"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2022" accuracy="96"></osclass></osmatch><osmatch name="Microsoft Windows Server 2016" accuracy="91" line="81686"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2016" accuracy="91"></osclass></osmatch><osmatch name="Microsoft Windows 11 21H2" accuracy="90" line="75497"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="90"></osclass></osmatch></os><uptime seconds="895672" lastboot="Mon Jan 26 14:40:50 2026"></uptime><tcpsequence index="257" difficulty="Good luck!" values="1AD641CA,3296F4FB,E7813123,2DEE324A,7F94B51A,6EA4E9A9"></tcpsequence><ipidsequence class="Incremental" values="EE7E,EE7F,EE81,EE83,EE85,EE87"></ipidsequence><tcptssequence class="1000HZ" values="3484F86D,3484F8DA,3484F949,3484F9B9,3484FA29,3484FA99"></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="1.11" ipaddr="192.168.105.10" host="Domain.wskinner.ninjas"></hop></trace></host><host comment=""><status state="up"></status><address addr="192.168.105.20" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:10" vendor="Microsoft" addrtype="mac"></address><hostnames><hostname name="website.wskinner.ninjas" type="PTR"></hostname></hostnames><ports><extraports count="1999" state="closed"></extraports><port portid="22" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="64"></state><service conf="10" method="probed" name="ssh" product="OpenSSH" version="9.6p1 Ubuntu 3ubuntu13.14" extrainfo="Ubuntu Linux; protocol 2.0"></service></port></ports><os><portused state="open" proto="tcp" portid="22"></portused><portused state="closed" proto="tcp" portid="1"></portused><portused state="closed" proto="udp" portid="2"></portused><osmatch name="Linux 4.15 - 5.19" accuracy="100" line="70534"><osclass vendor="Linux" osfamily="Linux" type="general purpose" osgen="5.X" accuracy="100"></osclass></osmatch><osmatch name="OpenWrt 21.02 (Linux 5.4)" accuracy="100" line="72530"><osclass vendor="Linux" osfamily="Linux" type="general purpose" osgen="5.X" accuracy="100"></osclass></osmatch><osmatch name="MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)" accuracy="100" line="91792"><osclass vendor="Linux" osfamily="Linux" type="router" osgen="5.X" accuracy="100"></osclass></osmatch></os><uptime seconds="2861402" lastboot="Sat Jan  3 20:38:40 2026"></uptime><tcpsequence index="260" difficulty="Good luck!" values="DEFCE05F,AD1EE2F5,C5730BEE,4618677D,95827C72,EA1D0A40"></tcpsequence><ipidsequence class="All zeros" values="0,0,0,0,0,0"></ipidsequence><tcptssequence class="1000HZ" values="A9AF83A5,A9AF8414,A9AF8484,A9AF84F5,A9AF8564,A9AF85D4"></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="0.98" ipaddr="192.168.105.20" host="website.wskinner.ninjas"></hop></trace></host><host comment=""><status state="up"></status><address addr="192.168.105.100" vendor="" addrtype="ipv4"></address><address addr="00:15:5D:68:0A:0A" vendor="Microsoft" addrtype="mac"></address><hostnames><hostname name="Workstation_1.wskinner.ninjas" type="PTR"></hostname></hostnames><ports><extraports count="1000" state="open|filtered"></extraports><extraports count="999" state="filtered"></extraports><port portid="135" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port></ports><os><portused state="open" proto="tcp" portid="135"></portused><osmatch name="Microsoft Windows 11 21H2" accuracy="91" line="75497"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="91"></osclass></osmatch><osmatch name="FreeBSD 6.2-RELEASE" accuracy="86" line="29729"><osclass vendor="FreeBSD" osfamily="FreeBSD" type="general purpose" osgen="6.X" accuracy="86"></osclass></osmatch><osmatch name="Microsoft Windows Server 2022" accuracy="85" line="82075"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2022" accuracy="85"></osclass></osmatch><osmatch name="Microsoft Windows 10" accuracy="85" line="74394"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="85"></osclass></osmatch></os><uptime seconds="888024" lastboot="Mon Jan 26 16:48:18 2026"></uptime><tcpsequence index="260" difficulty="Good luck!" values="EB2EE019,DBF2800F,FBF1E1F8,856C0BBA,6C111000,8B245045"></tcpsequence><ipidsequence class="Incremental" values="B658,B659,B65B,B65D,B65F,B661"></ipidsequence><tcptssequence class="1000HZ" values="3410454B,341045B8,34104626,34104696,34104707,34104776"></tcptssequence><trace proto="" port=""><hop ttl="1" rtt="0.99" ipaddr="192.168.105.100" host="Workstation_1.wskinner.ninjas"></hop></trace></host><host comment=""><status state="up"></status><address addr="192.168.105.15" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports><extraports count="1988" state="closed"></extraports><port portid="135" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="139" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="netbios-ssn" product="Microsoft Windows netbios-ssn"></service></port><port portid="445" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="microsoft-ds"></service></port><port portid="5357" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP"></service></port><port portid="137" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="netbios-ns"></service></port><port portid="138" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="netbios-dgm"></service></port><port portid="1900" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="upnp"></service></port><port portid="3702" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="ws-discovery"></service></port><port portid="4500" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="nat-t-ike"></service></port><port portid="5050" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="mmcc"></service></port><port portid="5353" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="zeroconf"></service></port><port portid="5355" protocol="udp"><state state="open|filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="llmnr"></service></port></ports><os><portused state="open" proto="tcp" portid="135"></portused><portused state="closed" proto="tcp" portid="1"></portused><portused state="closed" proto="udp" portid="2"></portused><osmatch name="Microsoft Windows 10 1809 - 21H2" accuracy="100" line="75084"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="100"></osclass></osmatch></os><uptime seconds="" lastboot=""></uptime><tcpsequence index="263" difficulty="Good luck!" values="51E146B0,A6CC2080,9C06C2A1,9023FA39,2E15A0C5,AE4DA17F"></tcpsequence><ipidsequence class="Incremental" values="3897,3899,389B,389D,389F,38A1"></ipidsequence><tcptssequence class="none returned (unsupported)" values=""></tcptssequence></host><runstats><finished time="1770359507" timestr="Thu Feb  5 23:31:47 2026"></finished><hosts up="6" down="250" total="256"></hosts></runstats></nmaprun>
