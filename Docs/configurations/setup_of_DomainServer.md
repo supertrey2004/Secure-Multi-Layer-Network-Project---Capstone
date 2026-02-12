@@ -48,3 +48,10 @@
     - Make Computer group
     - Block or restrict what people can do on computers
     - Allow admin to alter computers
+    - Make a organizational unit for employees
+    - Put employees group and employees themselves into OU
+    - Set up GPO
+        - 
+    - Connect GPO to Organizational Unit
+    - load GPO on computer.
+    - test users.
