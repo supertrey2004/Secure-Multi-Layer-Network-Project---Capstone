@@ -16,3 +16,21 @@
 4. Installing softwares
     - MongoDB
     > 
+
+5. Setup of users
+    - mongosh
+    > use admin 
+    > db.createUser({
+    >     user: "Admin",
+    >     pwd: "******",
+    >     roles: [ { role: "root", db: "admin" } ]
+    > })
+    > exit
+    - Log in as this user
+    > mongosh -u compassUser -p --authenticationDatabase admin
+    > use capstone
+    > db.createUser({
+    >     user: "web",
+    >     pwd: "******",
+    >     roles: [ { role: "readWrite", db: "capstone" } ]
+    > })
