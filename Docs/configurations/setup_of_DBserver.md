@@ -23,27 +23,27 @@
 5. Setup of users
     - mongosh
     > use admin 
-    > db.createUser({
-    >     user: "Admin",
-    >     pwd: "******",
-    >     roles: [ { role: "root", db: "admin" } ]
-    > })
-    > exit
-    - Log in as this user
-    > mongosh -u compassUser -p --authenticationDatabase admin
-    > use capstone
-    > db.createUser({
-    >     user: "web",
-    >     pwd: "******",
-    >     roles: [ { role: "readWrite", db: "capstone" } ]
-    > })
-    - change config
-    > sudo nano /etc/mongod.conf
-    > net:
-    >   port: 27017
-    >   bindIp: 0.0.0.0
+    > db.createUser({  
+    >     user: "Admin",  
+    >     pwd: "******",  
+    >     roles: [ { role: "root", db: "admin" } ]  
+    > })  
+    > exit  
+    - Log in as this user  
+    > mongosh -u compassUser -p --authenticationDatabase admin  
+    > use capstone  
+    > db.createUser({  
+    >     user: "web",  
+    >     pwd: "******",  
+    >     roles: [ { role: "readWrite", db: "capstone" } ]  
+    > })  
+    - change config  
+    > sudo nano /etc/mongod.conf  
+    > net:  
+    >   port: 27017  
+    >   bindIp: 0.0.0.0  
 
-    > security:
-    >   authorization: enabled
+    > security:  
+    >   authorization: enabled  
 
-    > sudo systemctl restart mongod
+    > sudo systemctl restart mongod  
