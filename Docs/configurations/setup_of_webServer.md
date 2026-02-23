@@ -19,7 +19,7 @@
     > curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -  
     > sudo apt install -y nodejs  
     > sudo apt install -y git  
-    > sudo apt install -y nginx 
+    > sudo apt install -y nginx  
     > sudo npm install -g pm2   
     > - Firewall Setup  
     > sudo ufw allow OpenSSH  
@@ -31,16 +31,16 @@
 5. Installing website
     > - Getting website
     > cd /var/www  
-    > git clone -b Website https://github.com/supertrey2004/Secure-Multi-Layer-Network-Project---Capstone.git website  
+    > sudo git clone -b Website https://github.com/supertrey2004/Secure-Multi-Layer-Network-Project---Capstone.git website  
     > cd /var/www/website/website/front-end  
-    > npm install  
-    > nano .env  
+    > sudo npm install  
+    > sudo nano .env  
     > - Set it up with the corresponding values  
     > pm2 start front-end.js --name frontend  
     > pm2 save  
     > cd /var/www/website/website/back-end  
-    > npm install  
-    > nano .env  
+    > sudo npm install  
+    > sudo nano .env    
     > - Set it up with the corresponding values  
     > pm2 start back-end.js --name backend  
     > pm2 save  
