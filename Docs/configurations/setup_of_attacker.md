@@ -1,5 +1,10 @@
 # Attacker
 
+- notes
+    - connections control
+    - sudo ip link set <interface_name> down
+    - sudo ip link set <interface_name> up
+
 1. Installing OS
     - Select Install Ubuntu
     - Leave all settings default

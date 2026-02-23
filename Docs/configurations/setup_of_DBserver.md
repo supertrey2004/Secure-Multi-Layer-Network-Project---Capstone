@@ -19,6 +19,8 @@
     > echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.com/apt/ubuntu noble/mongodb-enterprise/8.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-enterprise-8.2.list  
     > sudo apt-get update  
     > sudo apt-get install mongodb-enterprise  
+    > sudo systemctl enable mongod  
+    > sudo systemctl start mongod  
 
 5. Setup of users
     - mongosh
