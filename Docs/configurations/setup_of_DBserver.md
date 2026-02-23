@@ -22,7 +22,7 @@
 
 5. Setup of users
     - mongosh
-    > use admin 
+    > use admin  
     > db.createUser({  
     >     user: "Admin",  
     >     pwd: "******",  
