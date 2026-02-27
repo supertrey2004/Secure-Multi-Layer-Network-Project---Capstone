@@ -47,8 +47,7 @@ Two **OPNsense firewalls** enforce segmentation and routing between layers.
 
 | VM | Operating System | Purpose |
 |---|---|---|
-| Firewall 1 | OPNsense | External ↔ Internal network security |
-| Firewall 2 | OPNsense | Internal ↔ Private network security |
+| Firewall | OPNsense | External ↔ Internal network security - Private network security |
 | Domain Controller | Windows Server 2025 | Active Directory, DNS, authentication |
 | Web Server | Ubuntu Server LTS | Node.js web application |
 | Database Server | Ubuntu Server LTS | MongoDB data storage |
