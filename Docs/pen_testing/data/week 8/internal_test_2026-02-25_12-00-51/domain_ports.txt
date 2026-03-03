@@ -1,0 +1,18 @@
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:01:20 2026 as: nmap -p 53,88,135,139,389,445,464,636,3268,3389 -oN internal_test_2026-02-25_12-00-51/domain_ports.txt 192.168.105.10
+Nmap scan report for 192.168.105.10
+Host is up (0.0011s latency).
+
+PORT     STATE    SERVICE
+53/tcp   open     domain
+88/tcp   open     kerberos-sec
+135/tcp  open     msrpc
+139/tcp  open     netbios-ssn
+389/tcp  open     ldap
+445/tcp  open     microsoft-ds
+464/tcp  open     kpasswd5
+636/tcp  open     ldapssl
+3268/tcp open     globalcatLDAP
+3389/tcp filtered ms-wbt-server
+MAC Address: 00:15:5D:68:0A:01 (Microsoft)
+
+# Nmap done at Wed Feb 25 12:01:34 2026 -- 1 IP address (1 host up) scanned in 14.44 seconds

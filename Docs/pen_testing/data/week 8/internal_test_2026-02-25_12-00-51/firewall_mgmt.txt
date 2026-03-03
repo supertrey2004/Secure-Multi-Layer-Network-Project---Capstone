@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:02:31 2026 as: nmap -p 22,443,8443 -oN internal_test_2026-02-25_12-00-51/firewall_mgmt.txt 192.168.105.1
+Nmap scan report for 192.168.105.1
+Host is up (0.00062s latency).
+
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+443/tcp  filtered https
+8443/tcp filtered https-alt
+MAC Address: 00:15:5D:68:0A:04 (Microsoft)
+
+# Nmap done at Wed Feb 25 12:02:45 2026 -- 1 IP address (1 host up) scanned in 14.41 seconds

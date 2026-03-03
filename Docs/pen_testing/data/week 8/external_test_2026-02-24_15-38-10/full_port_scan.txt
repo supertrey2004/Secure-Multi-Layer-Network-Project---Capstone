@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Feb 24 15:38:38 2026 as: nmap -sS -sV -O -Pn -p- -oN external_test_2026-02-24_15-38-10/full_port_scan.txt 10.0.104.11
+Nmap scan report for 10.0.104.11
+Host is up (0.00070s latency).
+All 65535 scanned ports on 10.0.104.11 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 24 16:00:50 2026 -- 1 IP address (1 host up) scanned in 1331.69 seconds

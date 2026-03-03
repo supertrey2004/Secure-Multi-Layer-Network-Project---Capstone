@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Tue Feb 24 16:01:11 2026 as: nmap -sX -oN external_test_2026-02-24_15-38-10/xmas_scan.txt 10.0.104.11
+Nmap scan report for 10.0.104.11
+Host is up (0.0025s latency).
+All 1000 scanned ports on 10.0.104.11 are in ignored states.
+Not shown: 1000 open|filtered tcp ports (no-response)
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+
+# Nmap done at Tue Feb 24 16:01:32 2026 -- 1 IP address (1 host up) scanned in 21.28 seconds

@@ -1,0 +1,21 @@
+# Nmap 7.94SVN scan initiated Tue Feb 24 16:01:32 2026 as: nmap -Pn -p- -oN external_test_2026-02-24_15-38-10/internal_105_scan.txt 192.168.105.0/24
+Nmap scan report for 192.168.105.0
+Host is up.
+All 65535 scanned ports on 192.168.105.0 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+
+Nmap scan report for 192.168.105.2
+Host is up.
+All 65535 scanned ports on 192.168.105.2 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+
+Nmap scan report for 192.168.105.4
+Host is up.
+All 65535 scanned ports on 192.168.105.4 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+
+Nmap scan report for 192.168.105.6
+Host is up.
+All 65535 scanned ports on 192.168.105.6 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+

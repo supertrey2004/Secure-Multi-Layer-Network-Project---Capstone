@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:01:34 2026 as: nmap --script smb2-security-mode -p 445 -oN internal_test_2026-02-25_12-00-51/smb_signing.txt 192.168.105.10
+Nmap scan report for 192.168.105.10
+Host is up (0.00072s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 00:15:5D:68:0A:01 (Microsoft)
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+
+# Nmap done at Wed Feb 25 12:01:47 2026 -- 1 IP address (1 host up) scanned in 13.38 seconds

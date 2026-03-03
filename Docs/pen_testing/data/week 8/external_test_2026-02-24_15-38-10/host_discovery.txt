@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Tue Feb 24 15:38:10 2026 as: nmap -sn -oN external_test_2026-02-24_15-38-10/host_discovery.txt 10.0.104.0/24
+Nmap scan report for 10.0.104.1
+Host is up (0.014s latency).
+MAC Address: 2C:3E:CF:BA:E9:C4 (Cisco Systems)
+Nmap scan report for 10.0.104.10
+Host is up (0.00063s latency).
+MAC Address: 24:B6:FD:C8:DB:E8 (Dell)
+Nmap scan report for 10.0.104.11
+Host is up (0.00086s latency).
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+Nmap scan report for 10.0.104.30
+Host is up.
+# Nmap done at Tue Feb 24 15:38:38 2026 -- 256 IP addresses (4 hosts up) scanned in 27.94 seconds
