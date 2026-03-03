@@ -30,3 +30,5 @@
     - reload
 
 6. Setting up security
+    - In security add a rule that blocks all incoming data to private network
+    - Add secondary rule that allows packets and other information from a specific IP address to private network. 

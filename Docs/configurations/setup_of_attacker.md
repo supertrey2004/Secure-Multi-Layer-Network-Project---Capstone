@@ -19,3 +19,9 @@
 3. Confirm system operations and update
 
 4. Installing softwares
+    - Take the install script found to pen_testing and run it
+    - This will install all needed softwares for testing purposes
+
+5. Prepare for analysis
+    - Take one of the attack scripts and run it based on it if it's inside or outside the main network. 
+    - Take the results in the folder and analyze for corresponding data.
