@@ -1,0 +1,21 @@
+After looking at both results and functionality I was able to confirm that even though one of the scans did not complete the overall external defense is secured.
+
+But based on results on the internal the database is currently still exposed even with firewall rules restricting access.
+
+There are a couple issues that I can find but nothing critical is in danger. 
+
+Overall my recommended ation if I were to continue this project would be double check the security of the firewall verify database security and improve data flow between the two with higher security measures.
+
+References:
+
+| Category                    | Result              |
+| --------------------------- | ------------------- |
+| External Attack Surface     | Excellent           |
+| Firewall Configuration      | Excellent           |
+| Internal Network Protection | Excellent           |
+| Information Leakage         | Minimal             |
+| Segmentation                | Good                |
+| Firewall protection         | Good                |
+| Domain Controller hardening | Good                |
+| Lateral movement resistance | Good                |
+| Database isolation          | ⚠ Needs improvement |

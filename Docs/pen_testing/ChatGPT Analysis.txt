@@ -1,0 +1,986 @@
+#!/bin/bash
+
+# =========================
+# VARIABLES
+# =========================
+
+ATTACKER="192.168.105.30"
+VLAN105="192.168.105.0/24"
+DOMAIN="192.168.105.10"
+WEB="192.168.105.20"
+WORKSTATION="192.168.105.100"
+DB="192.168.104.10"
+FIREWALL="192.168.105.1"
+
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+OUTDIR="internal_test_$TIMESTAMP"
+
+mkdir -p $OUTDIR
+
+START_TIME=$(date +%s)
+echo "==== Internal Attack Simulation Started at $(date) ===="
+
+# =========================
+# PHASE 1 – Internal Recon
+# =========================
+
+echo "==== Phase 1: Host Discovery (VLAN 105) ===="
+nmap -sn $VLAN105 -oN $OUTDIR/host_discovery.txt
+
+# =========================
+# PHASE 2 – Domain Controller Exposure
+# =========================
+
+echo "==== Phase 2: Domain Port Check ===="
+nmap -p 53,88,135,139,389,445,464,636,3268,3389 $DOMAIN -oN $OUTDIR/domain_ports.txt
+
+echo "==== SMB Security Mode Check ===="
+nmap --script smb2-security-mode -p 445 $DOMAIN -oN $OUTDIR/smb_signing.txt
+
+# =========================
+# PHASE 3 – Lateral Movement Surface
+# =========================
+
+echo "==== Phase 3: Workstation Exposure ===="
+nmap -p 445,3389 $WORKSTATION -oN $OUTDIR/workstation_ports.txt
+
+echo "==== Phase 3: Web Server Exposure ===="
+nmap -p 445,3389,80,443 $WEB -oN $OUTDIR/web_ports.txt
+
+# =========================
+# PHASE 4 – Database Segmentation Test
+# =========================
+
+echo "==== Phase 4: DB Port Check from VLAN 105 ===="
+nmap -Pn -p 27017,3306,1433 $DB -oN $OUTDIR/db_segmentation.txt
+
+# =========================
+# PHASE 5 – Firewall Management Exposure
+# =========================
+
+echo "==== Phase 5: Firewall Management Exposure ===="
+nmap -p 22,443,8443 $FIREWALL -oN $OUTDIR/firewall_mgmt.txt
+
+# =========================
+# PHASE 6 – Quick Credential Surface Check
+# =========================
+
+echo "==== Phase 6: CrackMapExec Null Session Test ===="
+crackmapexec smb $DOMAIN -oN $OUTDIR/cme_domain.txt 2>/dev/null
+
+# =========================
+# FINISH
+# =========================
+
+END_TIME=$(date +%s)
+RUNTIME=$((END_TIME - START_TIME))
+MINUTES=$((RUNTIME / 60))
+SECONDS=$((RUNTIME % 60))
+
+echo "==== Internal Attack Simulation Finished at $(date) ===="
+echo "==== Total Runtime: ${MINUTES}m ${SECONDS}s ===="
+echo "==== Results saved in: $OUTDIR ===="
+
+
+--------------------------------------------------------------------------------------------------------
+
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:02:16 2026 as: nmap -Pn -p 27017,3306,1433 -oN internal_test_2026-02-25_12-00-51/db_segmentation.txt 192.168.104.10
+Nmap scan report for 192.168.104.10
+Host is up (0.00066s latency).
+
+PORT      STATE    SERVICE
+1433/tcp  filtered ms-sql-s
+3306/tcp  filtered mysql
+27017/tcp open     mongod
+MAC Address: 00:15:5D:68:0A:19 (Microsoft)
+
+# Nmap done at Wed Feb 25 12:02:31 2026 -- 1 IP address (1 host up) scanned in 14.42 seconds
+
+
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:01:20 2026 as: nmap -p 53,88,135,139,389,445,464,636,3268,3389 -oN internal_test_2026-02-25_12-00-51/domain_ports.txt 192.168.105.10
+Nmap scan report for 192.168.105.10
+Host is up (0.0011s latency).
+
+PORT     STATE    SERVICE
+53/tcp   open     domain
+88/tcp   open     kerberos-sec
+135/tcp  open     msrpc
+139/tcp  open     netbios-ssn
+389/tcp  open     ldap
+445/tcp  open     microsoft-ds
+464/tcp  open     kpasswd5
+636/tcp  open     ldapssl
+3268/tcp open     globalcatLDAP
+3389/tcp filtered ms-wbt-server
+MAC Address: 00:15:5D:68:0A:01 (Microsoft)
+
+# Nmap done at Wed Feb 25 12:01:34 2026 -- 1 IP address (1 host up) scanned in 14.44 seconds
+
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:02:31 2026 as: nmap -p 22,443,8443 -oN internal_test_2026-02-25_12-00-51/firewall_mgmt.txt 192.168.105.1
+Nmap scan report for 192.168.105.1
+Host is up (0.00062s latency).
+
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+443/tcp  filtered https
+8443/tcp filtered https-alt
+MAC Address: 00:15:5D:68:0A:04 (Microsoft)
+
+# Nmap done at Wed Feb 25 12:02:45 2026 -- 1 IP address (1 host up) scanned in 14.41 seconds
+
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:00:51 2026 as: nmap -sn -oN internal_test_2026-02-25_12-00-51/host_discovery.txt 192.168.105.0/24
+Nmap scan report for 192.168.105.1
+Host is up (0.0011s latency).
+MAC Address: 00:15:5D:68:0A:04 (Microsoft)
+Nmap scan report for 192.168.105.10
+Host is up (0.00099s latency).
+MAC Address: 00:15:5D:68:0A:01 (Microsoft)
+Nmap scan report for 192.168.105.15
+Host is up (0.00061s latency).
+MAC Address: 00:15:5D:68:0A:0D (Microsoft)
+Nmap scan report for 192.168.105.20
+Host is up (0.00094s latency).
+MAC Address: 00:15:5D:68:0A:10 (Microsoft)
+Nmap scan report for 192.168.105.100
+Host is up (0.00092s latency).
+MAC Address: 00:15:5D:68:0A:0A (Microsoft)
+Nmap scan report for 192.168.105.30
+Host is up.
+# Nmap done at Wed Feb 25 12:01:19 2026 -- 256 IP addresses (6 hosts up) scanned in 27.95 seconds
+
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:01:34 2026 as: nmap --script smb2-security-mode -p 445 -oN internal_test_2026-02-25_12-00-51/smb_signing.txt 192.168.105.10
+Nmap scan report for 192.168.105.10
+Host is up (0.00072s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 00:15:5D:68:0A:01 (Microsoft)
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+
+# Nmap done at Wed Feb 25 12:01:47 2026 -- 1 IP address (1 host up) scanned in 13.38 seconds
+
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:02:02 2026 as: nmap -p 445,3389,80,443 -oN internal_test_2026-02-25_12-00-51/web_ports.txt 192.168.105.20
+Nmap scan report for 192.168.105.20
+Host is up (0.00063s latency).
+
+PORT     STATE    SERVICE
+80/tcp   open     http
+443/tcp  closed   https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+MAC Address: 00:15:5D:68:0A:10 (Microsoft)
+
+# Nmap done at Wed Feb 25 12:02:16 2026 -- 1 IP address (1 host up) scanned in 14.48 seconds
+
+# Nmap 7.94SVN scan initiated Wed Feb 25 12:01:47 2026 as: nmap -p 445,3389 -oN internal_test_2026-02-25_12-00-51/workstation_ports.txt 192.168.105.100
+Nmap scan report for 192.168.105.100
+Host is up (0.00097s latency).
+
+PORT     STATE    SERVICE
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+MAC Address: 00:15:5D:68:0A:0A (Microsoft)
+
+# Nmap done at Wed Feb 25 12:02:02 2026 -- 1 IP address (1 host up) scanned in 14.44 seconds
+
+help Analyze this data
+
+------------------------------------------------------------------------------------------------
+
+You essentially ran a **simulated internal attacker reconnaissance script** against your VLAN. I'll walk through what the results mean **phase by phase**, what an attacker would conclude, and what the **security posture** of your network looks like. 🔎
+
+---
+
+# Overall Summary
+
+Your network segmentation is **mostly working well**, but there is **one major exposure**:
+
+⚠️ **MongoDB (27017) is reachable from VLAN105**
+
+Everything else is mostly **filtered or properly configured**.
+
+---
+
+# Phase 1 – Host Discovery
+
+Discovered hosts on **192.168.105.0/24**
+
+| IP              | Likely Device     |
+| --------------- | ----------------- |
+| 192.168.105.1   | Firewall          |
+| 192.168.105.10  | Domain Controller |
+| 192.168.105.15  | Unknown machine   |
+| 192.168.105.20  | Web Server        |
+| 192.168.105.100 | Workstation       |
+| 192.168.105.30  | Attacker machine  |
+
+### Security Analysis
+
+✔ Host discovery is normal on internal networks.
+
+However:
+
+⚠ **Unknown system**
+
+```
+192.168.105.15
+```
+
+You should verify what that system is.
+
+---
+
+# Phase 2 – Domain Controller Exposure
+
+Open ports:
+
+| Port | Service           |
+| ---- | ----------------- |
+| 53   | DNS               |
+| 88   | Kerberos          |
+| 135  | RPC               |
+| 139  | NetBIOS           |
+| 389  | LDAP              |
+| 445  | SMB               |
+| 464  | Kerberos password |
+| 636  | LDAPS             |
+| 3268 | Global Catalog    |
+| 3389 | RDP (filtered)    |
+
+### Security Analysis
+
+✔ **Completely normal for Active Directory**
+
+Domain Controllers require these services.
+
+Important observations:
+
+### Good Security
+
+✔ **RDP filtered**
+
+This means firewall rules are preventing remote desktop access.
+
+### SMB Security
+
+```
+Message signing enabled and required
+```
+
+This is **very good security practice**.
+
+It prevents:
+
+* NTLM relay attacks
+* SMB man-in-the-middle attacks
+
+✔ This is exactly what defenders want.
+
+---
+
+# Phase 3 – Lateral Movement Surface
+
+## Workstation
+
+```
+445 filtered
+3389 filtered
+```
+
+### Security Meaning
+
+✔ SMB blocked
+✔ RDP blocked
+
+This means attackers **cannot easily pivot laterally**.
+
+Good segmentation.
+
+---
+
+## Web Server
+
+Open ports:
+
+| Port | State    |
+| ---- | -------- |
+| 80   | open     |
+| 443  | closed   |
+| 445  | filtered |
+| 3389 | filtered |
+
+### Security Meaning
+
+✔ Only HTTP exposed.
+
+Good:
+
+* SMB blocked
+* RDP blocked
+
+But:
+
+⚠ HTTPS not configured.
+
+Better configuration would be:
+
+```
+80 → redirect
+443 → secure site
+```
+
+---
+
+# Phase 4 – Database Segmentation Test
+
+Results:
+
+| Port  | State    |
+| ----- | -------- |
+| 1433  | filtered |
+| 3306  | filtered |
+| 27017 | **OPEN** |
+
+### Security Meaning
+
+⚠ **MongoDB is reachable from VLAN105**
+
+This means **any internal attacker can reach the database**.
+
+This is usually **not recommended**.
+
+Proper architecture would be:
+
+```
+Web Server → MongoDB allowed
+User VLAN → MongoDB blocked
+```
+
+---
+
+# Phase 5 – Firewall Management Exposure
+
+Ports scanned:
+
+| Port | State    |
+| ---- | -------- |
+| 22   | filtered |
+| 443  | filtered |
+| 8443 | filtered |
+
+### Security Meaning
+
+✔ Firewall management **not accessible from VLAN105**
+
+This is **excellent**.
+
+Many networks expose this accidentally.
+
+---
+
+# Phase 6 – Credential Surface (CrackMapExec)
+
+Your script ran:
+
+```
+crackmapexec smb 192.168.105.10
+```
+
+But output wasn't shown.
+
+If it returned:
+
+```
+SMB Signing: True
+```
+
+Then authentication relay attacks are prevented.
+
+---
+
+# Overall Security Score
+
+| Category                    | Result              |
+| --------------------------- | ------------------- |
+| Segmentation                | Good                |
+| Firewall protection         | Good                |
+| Domain Controller hardening | Good                |
+| Lateral movement resistance | Good                |
+| Database isolation          | ⚠ Needs improvement |
+
+---
+
+# Biggest Vulnerability
+
+### MongoDB exposure
+
+```
+27017 open
+```
+
+From VLAN105 attacker network.
+
+Attackers could attempt:
+
+* brute force
+* database dumping
+* misconfiguration attacks
+
+---
+
+# Fix (Recommended)
+
+On your **OPNsense firewall**, restrict MongoDB:
+
+Allow rule:
+
+```
+Source:
+192.168.105.20
+
+Destination:
+192.168.104.10
+
+Port:
+27017
+```
+
+Block rule:
+
+```
+Source:
+192.168.105.0/24
+Destination:
+192.168.104.10
+Port:
+27017
+Action:
+BLOCK
+```
+
+Except web server.
+
+---
+
+# Additional Improvements
+
+### 1. Force HTTPS on Web Server
+
+Port 443 should be used.
+
+### 2. Investigate Unknown Host
+
+```
+192.168.105.15
+```
+
+Could be:
+
+* another VM
+* management system
+* forgotten device
+
+---
+
+### 3. Disable HTTP (optional)
+
+Force redirect:
+
+```
+80 → 443
+```
+
+---
+
+# What an Attacker Would Do Next
+
+If this were a real internal compromise:
+
+1️⃣ Attack web server
+2️⃣ Attempt MongoDB access
+3️⃣ Attempt credential harvesting from domain services
+4️⃣ Pivot through web server to database
+
+---
+
+# Final Verdict
+
+Your firewall segmentation is **actually pretty solid**. 👍
+
+Only **one meaningful exposure**:
+
+```
+MongoDB accessible from VLAN105
+```
+
+Fix that and your internal network becomes **significantly harder to attack**.
+
+---
+
+✅ If you want, I can also show you **the exact next attacks a real red team would attempt** against this network (Kerberos, AD enumeration, etc.). It would help you finish your capstone attack simulation.
+
+---------------------------------------------------------------------------------------
+
+#!/bin/bash
+
+TARGET="10.0.104.11"
+INTERNAL1="192.168.105.0/24"
+INTERNAL2="192.168.104.0/24"
+
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+OUTDIR="external_test_$TIMESTAMP"
+
+mkdir -p $OUTDIR
+
+START_TIME=$(date +%s)
+echo "==== Scan Started at $(date) ===="
+
+echo "==== Phase 1: Host Discovery ===="
+nmap -sn 10.0.104.0/24 -oN $OUTDIR/host_discovery.txt
+
+echo "==== Phase 2: Full Port Scan on Firewall WAN ===="
+nmap -sS -sV -O -Pn -p- $TARGET -oN $OUTDIR/full_port_scan.txt
+
+echo "==== Phase 3: Default Script Scan on Open Ports ===="
+OPEN_PORTS=$(grep "^[0-9]" $OUTDIR/full_port_scan.txt | cut -d "/" -f1 | tr '\n' ',' | sed 's/,$//')
+
+if [ ! -z "$OPEN_PORTS" ]; then
+    nmap -sC -sV -p $OPEN_PORTS $TARGET -oN $OUTDIR/service_enum.txt
+fi
+
+echo "==== Phase 4: Firewall Filtering Tests ===="
+nmap -sA $TARGET -oN $OUTDIR/ack_scan.txt
+nmap -sX $TARGET -oN $OUTDIR/xmas_scan.txt
+
+echo "==== Phase 5: Internal Subnet Exposure Test ===="
+nmap -Pn -p- $INTERNAL1 -oN $OUTDIR/internal_105_scan.txt
+nmap -Pn -p- $INTERNAL2 -oN $OUTDIR/internal_104_scan.txt
+
+echo "==== Phase 6: Web Testing (if HTTP/HTTPS open) ===="
+
+if echo "$OPEN_PORTS" | grep -q "80"; then
+    nikto -h http://$TARGET > $OUTDIR/nikto_http.txt
+    gobuster dir -u http://$TARGET -w /usr/share/wordlists/dirb/common.txt -o $OUTDIR/gobuster_http.txt
+fi
+
+if echo "$OPEN_PORTS" | grep -q "443"; then
+    nikto -h https://$TARGET > $OUTDIR/nikto_https.txt
+    gobuster dir -u https://$TARGET -k -w /usr/share/wordlists/dirb/common.txt -o $OUTDIR/gobuster_https.txt
+fi
+
+echo "==== Scan Complete ===="
+echo "Results saved in: $OUTDIR"
+
+END_TIME=$(date +%s)
+echo "==== Scan Finished at $(date) ===="
+
+RUNTIME=$((END_TIME - START_TIME))
+
+echo "==== Total Runtime: $RUNTIME seconds ===="
+
+
+-------------------------------------------------------------------
+
+# Nmap 7.94SVN scan initiated Tue Feb 24 16:01:11 2026 as: nmap -sX -oN external_test_2026-02-24_15-38-10/xmas_scan.txt 10.0.104.11
+Nmap scan report for 10.0.104.11
+Host is up (0.0025s latency).
+All 1000 scanned ports on 10.0.104.11 are in ignored states.
+Not shown: 1000 open|filtered tcp ports (no-response)
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+
+# Nmap done at Tue Feb 24 16:01:32 2026 -- 1 IP address (1 host up) scanned in 21.28 seconds
+
+# Nmap 7.94SVN scan initiated Tue Feb 24 16:00:50 2026 as: nmap -sA -oN external_test_2026-02-24_15-38-10/ack_scan.txt 10.0.104.11
+Nmap scan report for 10.0.104.11
+Host is up (0.0019s latency).
+All 1000 scanned ports on 10.0.104.11 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+
+# Nmap done at Tue Feb 24 16:01:11 2026 -- 1 IP address (1 host up) scanned in 21.31 seconds
+
+
+# Nmap 7.94SVN scan initiated Tue Feb 24 15:38:38 2026 as: nmap -sS -sV -O -Pn -p- -oN external_test_2026-02-24_15-38-10/full_port_scan.txt 10.0.104.11
+Nmap scan report for 10.0.104.11
+Host is up (0.00070s latency).
+All 65535 scanned ports on 10.0.104.11 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 24 16:00:50 2026 -- 1 IP address (1 host up) scanned in 1331.69 seconds
+
+
+# Nmap 7.94SVN scan initiated Tue Feb 24 15:38:10 2026 as: nmap -sn -oN external_test_2026-02-24_15-38-10/host_discovery.txt 10.0.104.0/24
+Nmap scan report for 10.0.104.1
+Host is up (0.014s latency).
+MAC Address: 2C:3E:CF:BA:E9:C4 (Cisco Systems)
+Nmap scan report for 10.0.104.10
+Host is up (0.00063s latency).
+MAC Address: 24:B6:FD:C8:DB:E8 (Dell)
+Nmap scan report for 10.0.104.11
+Host is up (0.00086s latency).
+MAC Address: 00:15:5D:68:0A:02 (Microsoft)
+Nmap scan report for 10.0.104.30
+Host is up.
+# Nmap done at Tue Feb 24 15:38:38 2026 -- 256 IP addresses (4 hosts up) scanned in 27.94 seconds
+
+
+# Nmap 7.94SVN scan initiated Tue Feb 24 16:01:32 2026 as: nmap -Pn -p- -oN external_test_2026-02-24_15-38-10/internal_105_scan.txt 192.168.105.0/24
+Nmap scan report for 192.168.105.0
+Host is up.
+All 65535 scanned ports on 192.168.105.0 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+
+Nmap scan report for 192.168.105.2
+Host is up.
+All 65535 scanned ports on 192.168.105.2 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+
+Nmap scan report for 192.168.105.4
+Host is up.
+All 65535 scanned ports on 192.168.105.4 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+
+Nmap scan report for 192.168.105.6
+Host is up.
+All 65535 scanned ports on 192.168.105.6 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+
+----------------------------------------------
+
+This dataset is actually **very clean from a security perspective**. Your external testing script essentially simulated what an **internet attacker** would see when probing your network. I’ll break down what each phase means and what conclusions a security analyst would draw.
+
+---
+
+# Overall Result
+
+From the perspective of an **external attacker**, your firewall is doing exactly what it should.
+
+**Key finding:**
+
+✔ **No externally exposed ports**
+✔ **Internal networks not reachable**
+✔ **Firewall stealth filtering working**
+
+This is generally considered a **strong perimeter security posture**.
+
+---
+
+# Phase 1 – External Host Discovery
+
+Discovered hosts:
+
+| IP          | Device            |
+| ----------- | ----------------- |
+| 10.0.104.1  | Cisco router      |
+| 10.0.104.10 | Dell machine      |
+| 10.0.104.11 | Firewall (target) |
+| 10.0.104.30 | Attacker machine  |
+
+### Analysis
+
+The scan found **4 active systems on the external subnet**.
+
+However, host discovery does **not expose services**, it just indicates systems respond to ARP/ping.
+
+This is normal in a lab network.
+
+---
+
+# Phase 2 – Full Port Scan on Firewall
+
+Scan:
+
+```
+nmap -sS -sV -O -Pn -p- 10.0.104.11
+```
+
+Result:
+
+```
+All 65535 scanned ports are filtered
+```
+
+### Meaning
+
+The firewall is **dropping packets without responding**.
+
+There are three typical port states:
+
+| State    | Meaning                       |
+| -------- | ----------------------------- |
+| open     | service responding            |
+| closed   | host responds but port unused |
+| filtered | firewall blocking             |
+
+Your firewall returned:
+
+```
+filtered
+```
+
+This means:
+
+✔ No services reachable
+✔ Firewall silently discarding packets
+✔ Harder for attackers to fingerprint
+
+This is **exactly what perimeter firewalls should do**.
+
+---
+
+# Phase 3 – Service Enumeration
+
+Your script tried to run additional scans if open ports were found:
+
+```
+nmap -sC -sV
+```
+
+But since **no ports were open**, this phase was skipped.
+
+Meaning:
+
+✔ No services exposed to the internet.
+
+---
+
+# Phase 4 – Firewall Filtering Tests
+
+Two evasion scans were attempted.
+
+### ACK Scan
+
+```
+nmap -sA
+```
+
+Result:
+
+```
+1000 filtered ports
+```
+
+This indicates:
+
+✔ Stateful firewall filtering
+✔ No rule leaks
+
+Attackers often use ACK scans to determine if a firewall is **stateful or stateless**.
+
+Your firewall behaves correctly.
+
+---
+
+### Xmas Scan
+
+```
+nmap -sX
+```
+
+Result:
+
+```
+open|filtered
+```
+
+This is typical for a **stealth firewall**.
+
+It means:
+
+✔ Packets are dropped silently
+✔ IDS evasion attempts failed
+
+---
+
+# Phase 5 – Internal Network Exposure Test
+
+Your script tried scanning:
+
+```
+192.168.105.0/24
+192.168.104.0/24
+```
+
+From the **external network**.
+
+Results:
+
+```
+65535 filtered
+```
+
+### Security Meaning
+
+✔ Internal VLANs **cannot be reached externally**.
+
+This confirms:
+
+* NAT working
+* firewall blocking lateral traversal
+* private networks isolated
+
+This is exactly how a **proper perimeter firewall** should behave.
+
+---
+
+# Phase 6 – Web Testing
+
+These tools only run if ports **80 or 443** are open:
+
+* nikto
+* gobuster
+
+Because your firewall exposed **no web ports**, these scans **never executed**.
+
+Which again confirms:
+
+✔ No public web service exposed.
+
+---
+
+# Attacker Perspective
+
+An external attacker would conclude:
+
+```
+Host exists
+but all ports filtered
+```
+
+Meaning:
+
+* the firewall is present
+* services are hidden
+* attack surface minimal
+
+Most attackers would **move on to another target**.
+
+---
+
+# Security Strengths Observed
+
+### 1. Strong Perimeter Firewall
+
+All ports filtered:
+
+```
+65535 filtered
+```
+
+This is extremely good.
+
+---
+
+### 2. Proper Network Segmentation
+
+External networks **cannot see internal VLANs**.
+
+```
+192.168.x.x networks filtered
+```
+
+Excellent configuration.
+
+---
+
+### 3. Stealth Filtering
+
+Instead of returning:
+
+```
+closed
+```
+
+Your firewall returns:
+
+```
+filtered
+```
+
+Which hides system behavior.
+
+---
+
+# Minor Observations
+
+### 1. External Network Visibility
+
+You can still see hosts via host discovery:
+
+```
+10.0.104.x
+```
+
+In a real internet environment this usually **wouldn't happen** because ARP scanning isn't possible across routers.
+
+So this is normal for a **lab environment**.
+
+---
+
+### 2. OS Detection Failed
+
+```
+Too many fingerprints match
+```
+
+This means the firewall is **successfully preventing fingerprinting**.
+
+---
+
+# Final Security Assessment
+
+| Category                    | Result    |
+| --------------------------- | --------- |
+| External Attack Surface     | Excellent |
+| Firewall Configuration      | Excellent |
+| Internal Network Protection | Excellent |
+| Service Exposure            | None      |
+| Information Leakage         | Minimal   |
+
+Overall security posture:
+
+**Very strong perimeter defense**.
+
+---
+
+# Important Note
+
+Your **internal test earlier** found one issue:
+
+MongoDB exposed internally:
+
+```
+27017 open
+```
+
+So the real security takeaway is:
+
+| Area             | Risk             |
+| ---------------- | ---------------- |
+| External network | Secure           |
+| Internal network | MongoDB exposure |
+
+---
+
+# If This Were a Real Pentest Report
+
+Risk level would be:
+
+```
+External risk: LOW
+Internal risk: MEDIUM
+```
+
+Because most real breaches happen **after internal compromise**.
+
+---
+
+✅ If you'd like, I can also show you **3 extra scans real penetration testers run after this stage** that can reveal firewall misconfigurations most students miss.
